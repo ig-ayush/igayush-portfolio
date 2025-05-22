@@ -1,3 +1,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Exile&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jaro:opsz@6..72&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins&family=Roboto:ital,wght@0,100;0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap");
 
-h1 {font-family: "Oswald", sans-serif;}
+#ig-ayush {
+  font-family: "Oswald", sans-serif;
+}
+
+#name {
+  font-family: "Spartan", sans-serif;
+}
+
+#bio {
+  font-family: "Montserrat", sans-serif;
+}
+
+#about-me {
+  background: -webkit-gradient(
+    linear,
+    right top,
+    left top,
+    from(rgba(247, 127, 0, 1)),
+    to(rgba(247, 127, 0, 0.5))
+  );
+  background-color: #f77f00;
+}
+
+#about-me:hover  #arrow{
+    transform: translateX(10px);
+}
