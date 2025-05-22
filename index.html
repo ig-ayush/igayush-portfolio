@@ -1,18 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ig-ayush | Portfolio</title>
-    <link rel="icon" type="image/svg+xml" href="Assets/title.svg">
-    <link rel="stylesheet" href="src/input.css">
-    <link rel="stylesheet" href="src/output.css">
+    <link rel="icon" type="image/svg+xml" href="Assets/title.svg" />
+    <link href="src/output.css" rel="stylesheet" />
+    <link rel="stylesheet" href="src/font.css" />
 
-</head>
-<body class="bg-[#111] text-white w-screen h-screen">
+    <!-- Font awsome CDN link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="bg-[#111] text-white w-screen h-screen overflow-x-hidden">
     <!-- Navbar -->
-     <nav class="pl-[10rem] pr-[10rem] p-6 text-2xl">
-        <h1>ig-ayush</h1>
-     </nav>
-</body>
+    <nav
+      class="pl-[10rem] pr-[10rem] p-8 text-2xl flex w-screen justify-between bg-transparent relative z-20 pointer-events-none"
+    >
+      <h1 class="text-3xl pointer-events-auto">
+        <span class="text-[#f77f00]">ig</span>-ayush
+      </h1>
+
+      <!-- Social medias links -->
+      <ul id="social-medias" class="flex gap-10 text-3xl pointer-events-auto">
+        <li class="hover:text-[#f77f00] duration-150 hover:-translate-y-1">
+          <a href="https://www.linkedin.com/in/ayush-acharya-65943132b/"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+        </li>
+        <li class="hover:text-[#f77f00] duration-150 hover:-translate-y-1">
+          <a href=""><i class="fa-brands fa-square-x-twitter"></i></a>
+        </li>
+        <li class="hover:text-[#f77f00] duration-150 hover:-translate-y-1">
+          <a href=""><i class="fa-brands fa-instagram"></i></a>
+        </li>
+        <li class="hover:text-[#f77f00] duration-150 hover:-translate-y-1">
+          <a href=""><i class="fa-solid fa-envelope"></i></a>
+        </li>
+        <li class="hover:text-[#f77f00] duration-150 hover:-translate-y-1">
+          <a href=""><i class="fa-brands fa-github"></i></a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Matter Js animation -->
+    <!-- <div id="wrapper-canvas" class="absolute inset-0"></div> -->
+
+    <main>
+      <!-- Image Logo -->
+      <div
+        id="img-logo"
+        class="relative pointer-events-none w-screen h-[60vh] flex items-center justify-center "
+      >
+        <svg
+        class="w-[500px] h-[500px]"
+          xmlns="http://www.w3.org/2000/svg"
+          width="406"
+          height="368"
+          viewBox="0 0 406 368"
+          fill="none"
+        >
+          <path
+            d="M314.899 203.5L314.899 349.43L162.5 209.053M314.899 203.5L283.037 203.586M314.899 203.5L337.881 203.586L381 171.109L314.899 171.109M162.5 209.053L118.044 170.96L157.5 171.109M162.5 209.053L65.5 301.465L20.5595 301.465L137.482 189.156M200.5 171.109L283.037 96.5L283.037 171.109M200.5 171.109L283.037 171.109M200.5 171.109L157.5 171.109M283.037 203.586L210.846 203.123L283.037 271.086L283.037 203.586ZM283.037 171.109L314.899 171.109M157.5 171.109L316.135 20.4322L314.899 171.109"
+            stroke="#1F2667"
+            stroke-opacity="0.9"
+            stroke-width="10"
+          />
+          <path
+            d="M314.899 203.5L314.899 349.43L162.5 209.053M314.899 203.5L283.037 203.586M314.899 203.5L337.881 203.586L381 171.109L314.899 171.109M162.5 209.053L118.044 170.96L157.5 171.109M162.5 209.053L65.5 301.465L20.5595 301.465L137.482 189.156M200.5 171.109L283.037 96.5L283.037 171.109M200.5 171.109L283.037 171.109M200.5 171.109L157.5 171.109M283.037 203.586L210.846 203.123L283.037 271.086L283.037 203.586ZM283.037 171.109L314.899 171.109M157.5 171.109L316.135 20.4322L314.899 171.109"
+            stroke="#f77f00"
+            stroke-width="10"
+          />
+        </svg>
+      </div>
+      <!-- Informations -->
+    </main>
+  </body>
+
+  <!-- Matter JS All Liknks -->
+  <script
+    src="https://code.jquery.com/jquery-3.6.0.js"
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"
+  ></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.12.0/matter.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/matter-wrap@0.2.0/build/matter-wrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/matter-attractors@0.1.6/build/matter-attractors.min.js"></script>
+  <script src="src/matter.js"></script>
 </html>

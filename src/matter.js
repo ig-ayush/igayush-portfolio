@@ -1,3 +1,11 @@
+{
+  /* <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.12.0/matter.min.js"></script>
+<script src="https://cdn/jsdelivr.net/npm/matter-wrap@0.2.0/build/matter-wrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/matter-attractors@0.1.6/build/matter-attractors.min.js"></script>
+ */
+}
+
 var canvas = document.querySelector("#wrapper-canvas");
 
 var dimensions = {
@@ -135,17 +143,21 @@ function runMatter() {
 
     World.add(world, circle);
 
-    var circle = Bodies.circle(x, y, Common.random(2, 30), {
-      mass: 0.2,
-      friction: 0.6,
-      frictionAir: 0.8,
+    var mediumBallColor =
+      Math.random() > 0.5 ? "#f77f00" : r > 0.3 ? "#334443" : "#222222";
+
+    var circle = Bodies.circle(x, y, Common.random(2, 20), {
+      mass: 6,
+      friction: 0,
+      frictionAir: 0,
       render: {
-        fillStyle: `#191919`,
-        strokeStyle: `#111111`,
-        lineWidth: 3,
+        fillStyle: mediumBallColor,
+        strokeStyle: mediumBallColor === "#f77f00" ? "#aa4f00" : "#111111",
+        lineWidth: 4,
+        shadowBlur: mediumBallColor === "#f77f00" ? 20 : 0,
+        shadowColor: "#f77f00",
       },
     });
-
     World.add(world, circle);
   }
 

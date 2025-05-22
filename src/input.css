@@ -1,1 +1,7 @@
 @import "tailwindcss";
+
+canvas{
+    /* position: absolute;
+    top: -5px; */
+    max-width: 100%;
+}

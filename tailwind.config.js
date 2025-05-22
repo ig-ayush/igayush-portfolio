@@ -1,12 +1,15 @@
-// tailwind.config.js as ES module (optional)
 export default {
-  content: ["./src/**/*.html"],
+  content: [
+  "./index.html",
+  "./src/**/*.{html,js,ts,jsx,tsx}", 
+  "./**/*.{html,js}",                
+],
   theme: {
     extend: {
-      colors: {
-        mycustomcolor: '#123456',
+      fontFamily: {
+        poppins: ['Poppins', 'sans-serif'],
       },
     },
   },
   plugins: [],
-}
+	}
