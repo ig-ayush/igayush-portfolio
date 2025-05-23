@@ -12,7 +12,7 @@
   font-family: "Montserrat", sans-serif;
 }
 
-#about-me {
+#aboutmeBtn{
   background: -webkit-gradient(
     linear,
     right top,
@@ -23,6 +23,3 @@
   background-color: #f77f00;
 }
 
-/* #about-me:hover  #arrow{
-    transform: translateX(10px);
-} */
