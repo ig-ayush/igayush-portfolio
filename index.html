@@ -6,7 +6,7 @@
     <title>ig-ayush | Portfolio</title>
     <link rel="icon" type="image/svg+xml" href="Assets/title.svg" />
     <link href="src/output.css" rel="stylesheet" />
-    <link rel="stylesheet" href="src/font.css" />
+    <link rel="stylesheet" href="src/styles.css" />
 
     <!-- Font awsome CDN link -->
     <link
@@ -22,14 +22,17 @@
   <body class="bg-[#111] text-white w-screen h-screen overflow-x-hidden">
     <!-- Navbar -->
     <nav
-      class="pl-[10rem] pr-[10rem] p-8 text-2xl flex w-screen justify-between bg-transparent relative z-20 pointer-events-none"
+      class="lg:pl-[10rem] lg:pr-[10rem] sm:pl-[5rem] sm:pr[5rem] md:p-8 p-5 text-2xl flex w-screen justify-between bg-transparent relative z-20 pointer-events-none"
     >
       <h1 class="text-3xl pointer-events-auto">
         <span class="text-[#f77f00]" id="ig-ayush">ig</span>-ayush
       </h1>
 
       <!-- Social medias links -->
-      <ul id="social-medias" class="flex gap-10 text-3xl pointer-events-auto">
+      <ul
+        id="social-medias"
+        class="md:flex hidden gap-10 text-3xl pointer-events-auto"
+      >
         <li class="hover:text-[#f77f00] duration-150 hover:-translate-y-1">
           <a href="https://www.linkedin.com/in/ayush-acharya-65943132b/"
             ><i class="fa-brands fa-linkedin"></i
@@ -48,10 +51,21 @@
           <a href=""><i class="fa-brands fa-github"></i></a>
         </li>
       </ul>
+
+      <!-- Profile pictures -->
+
+      <div id="profile-pics" class="md:hidden block">
+        <img
+          src="./Assets/Images/pic-1.jpg"
+          alt="Profile Pricture"
+          class="rounded-full w-[65px] h-[65px] object-cover max-auto"
+          id="profile-img"
+        />
+      </div>
     </nav>
 
     <!-- Matter Js animation -->
-    <div id="wrapper-canvas" class="absolute inset-0"></div>
+    <div id="wrapper-canvas" class="absolute inset-0 hidden lg:block"></div>
 
     <main>
       <!-- Image Logo -->
@@ -82,7 +96,7 @@
 
         <!-- Informations -->
         <h1
-          class="absolute left-[250px] top-[100px] text-6xl font-semibold"
+          class="absolute lg:left-[250px] md:left-[80px] md:top-[80px] lg:top-[100px] md:text-6xl font-semibold sm:top-[40px] sm:left-[40px] sm:text-5xl text-3xl top-[40px] left-[40px]"
           id="name"
           data-aos="zoom-out-right"
           data-aos-duration="2000"
@@ -90,7 +104,7 @@
           Ayush Acharya
         </h1>
         <h3
-          class="absolute left-[250px] top-[180px] text-xl"
+          class="absolute lg:left-[250px] lg:top-[180px] md:left-[80px] md:top-[160px] md:text-xl text-lg sm:left-[40px] sm:top-[120px] left-[40px] top-[100px]"
           id="bio"
           data-aos="fade-up"
           data-aos-duration="1500"
@@ -99,7 +113,7 @@
         </h3>
         <button
           id="aboutmeBtn"
-          class="absolute left-[250px] top-[250px] rounded-lg p-3 w-[150px] text-lg font-bold pointer-events-auto transition duration-500 hover:translate-x-4 group"
+          class="absolute lg:left-[250px] lg:top-[250px] md:left-[80px] md:top-[230px] rounded-lg p-3 sm:w-[150px] text-lg font-bold pointer-events-auto transition duration-500 hover:translate-x-4 group sm:left-[40px] sm:top-[190px] left-[40px] top-[180px]"
         >
           About
           <span
@@ -107,21 +121,49 @@
             >Me</span
           >
         </button>
+
+        <!-- Social media links in main section -->
+        <ul
+          id="social-medias"
+          class=" md:hidden flex flex-col items-end gap-[40px] sm:text-4xl text-3xl relative right-[20px] sm:top-5 top-[100px] w-max text-[#e0e1dd] "
+        >
+          <li class="hover:text-[#f77f00] duration-150 hover:-translate-y-1">
+            <a href="https://www.linkedin.com/in/ayush-acharya-65943132b/"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+          </li>
+          <li class="hover:text-[#f77f00] duration-150 hover:-translate-y-1">
+            <a href=""><i class="fa-brands fa-square-x-twitter"></i></a>
+          </li>
+          <li class="hover:text-[#f77f00] duration-150 hover:-translate-y-1">
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+          </li>
+          <li class="hover:text-[#f77f00] duration-150 hover:-translate-y-1">
+            <a href=""><i class="fa-solid fa-envelope"></i></a>
+          </li>
+          <li class="hover:text-[#f77f00] duration-150 hover:-translate-y-1">
+            <a href=""><i class="fa-brands fa-github"></i></a>
+          </li>
+        </ul>
+
         <div
           id="choices"
-          class="flex flex-col justify-center pointer-events-auto gap-[80px] h-[30vh] absolute right-16 pt-[100px] "
+          class="flex lg:flex-col flex-row lg:w-[180px] w-screen  items-center justify-center pointer-events-auto md:gap-[80px] sm:gap-[50px] gap-5 p-5 h-[30vh] absolute bottom-[-200px] lg:bottom-0 lg:right-16 md:right-10 pt-[100px] flex-wrap sm:flex-nowrap"
         >
           <button
-            class="text-lg font-bold w-[180px] p-3 rounded-lg bg-orange-500 text-white hover:-translate-x-5 duration-400 transition-all ease-in-out"
-            
+            class="text-lg font-bold lg:w-[180px] md:w-[140px] p-3 rounded-lg bg-orange-500 text-white hover:-translate-x-5 duration-400 transition-all ease-in-out"
           >
             Education
           </button>
 
-          <button class="text-lg font-bold w-[180px] p-3 rounded-lg hover:-translate-x-5 duration-400 transition-all ease-in-out">
+          <button
+            class="text-lg font-bold lg:w-[180px] w-[140px] p-3 rounded-lg hover:-translate-x-5 duration-400 transition-all ease-in-out"
+          >
             Projects
           </button>
-          <button class="text-lg font-bold w-[180px] p-3 rounded-lg hover:-translate-x-5 duration-400 transition-all ease-in-out">
+          <button
+            class="text-lg font-bold lg:w-[180px] w-[140px] p-3 rounded-lg hover:-translate-x-5 duration-400 transition-all ease-in-out"
+          >
             Contact
           </button>
         </div>
