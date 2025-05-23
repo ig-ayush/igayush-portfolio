@@ -23,3 +23,30 @@
   background-color: #f77f00;
 }
 
+#choices button{
+  background: -webkit-gradient(
+    linear,
+    right top,
+    left top,
+    from(rgba(247, 127, 0, 1)),
+    to(rgba(247, 127, 0, 0.5))
+    );
+    background-color: #f77f00;
+}
+
+#choices{
+  transition: all .5s;
+  animation: ani 1.5s ease-in-out;
+}
+
+@keyframes ani{
+  from{
+    transform: translate(20px);
+    opacity: 0;
+  }
+  to{
+    transform: translate(0px);
+    opacity: 1;
+  }
+}
+

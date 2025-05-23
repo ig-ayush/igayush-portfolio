@@ -16,6 +16,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
   </head>
   <body class="bg-[#111] text-white w-screen h-screen overflow-x-hidden">
     <!-- Navbar -->
@@ -82,18 +84,47 @@
         <h1
           class="absolute left-[250px] top-[100px] text-6xl font-semibold"
           id="name"
+          data-aos="zoom-out-right"
+          data-aos-duration="2000"
         >
           Ayush Acharya
         </h1>
-        <h3 class="absolute left-[250px] top-[180px] text-xl" id="bio">
+        <h3
+          class="absolute left-[250px] top-[180px] text-xl"
+          id="bio"
+          data-aos="fade-up"
+          data-aos-duration="1500"
+        >
           Passionate Full-Stack Software Developer
         </h3>
         <button
           id="aboutmeBtn"
-          class="absolute left-[250px] top-[250px] rounded-lg p-3 w-[150px] text-lg font-bold pointer-events-auto transition-all duration-500 hover:translate-x-4 group"
+          class="absolute left-[250px] top-[250px] rounded-lg p-3 w-[150px] text-lg font-bold pointer-events-auto transition duration-500 hover:translate-x-4 group"
         >
-          About <span class="group-hover:text-[#051923] group-hover:underline transition-colors duration-300 ">Me</span>
+          About
+          <span
+            class="group-hover:text-[#051923] group-hover:underline transition-colors duration-300"
+            >Me</span
+          >
         </button>
+        <div
+          id="choices"
+          class="flex flex-col justify-center pointer-events-auto gap-[80px] h-[30vh] absolute right-16 pt-[100px] "
+        >
+          <button
+            class="text-lg font-bold w-[180px] p-3 rounded-lg bg-orange-500 text-white hover:-translate-x-5 duration-400 transition-all ease-in-out"
+            
+          >
+            Education
+          </button>
+
+          <button class="text-lg font-bold w-[180px] p-3 rounded-lg hover:-translate-x-5 duration-400 transition-all ease-in-out">
+            Projects
+          </button>
+          <button class="text-lg font-bold w-[180px] p-3 rounded-lg hover:-translate-x-5 duration-400 transition-all ease-in-out">
+            Contact
+          </button>
+        </div>
       </div>
     </main>
   </body>
@@ -109,4 +140,10 @@
   <script src="https://cdn.jsdelivr.net/npm/matter-wrap@0.2.0/build/matter-wrap.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/matter-attractors@0.1.6/build/matter-attractors.min.js"></script>
   <script src="src/matter.js"></script>
+
+  <!-- Aos Script Link -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </html>
