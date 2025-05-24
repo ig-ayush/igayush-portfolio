@@ -113,7 +113,7 @@
         </h3>
         <h2
           id="build-things"
-          class="text-xl  block md:hidden absolute sm:left-[40px] sm:top-[170px] left-[40px] top-[180px]"
+          class="text-xl block md:hidden absolute sm:left-[40px] sm:top-[170px] left-[40px] top-[180px]"
           data-aos="fade-up"
           data-aos-duration="1000"
         >
@@ -122,6 +122,7 @@
         <button
           id="aboutmeBtn"
           class="absolute lg:left-[250px] lg:top-[250px] md:left-[80px] md:top-[230px] rounded-lg p-3 sm:w-[150px] text-lg font-bold pointer-events-auto transition duration-500 hover:translate-x-4 group sm:left-[40px] sm:top-[230px] left-[40px] top-[230px]"
+          onclick="activeAboutSec();"
         >
           About
           <span
@@ -129,7 +130,6 @@
             >Me</span
           >
         </button>
-
         <!-- Social media links in main section -->
         <ul
           id="social-medias"
@@ -153,7 +153,6 @@
             <a href=""><i class="fa-brands fa-github"></i></a>
           </li>
         </ul>
-
         <div
           id="choices"
           class="flex lg:flex-col flex-row lg:w-[180px] w-screen items-center justify-center pointer-events-auto md:gap-[80px] sm:gap-[50px] gap-5 p-5 h-[30vh] absolute bottom-[-200px] lg:bottom-0 lg:right-16 lg:top-[200px] md:right-10 pt-[100px] flex-wrap sm:flex-nowrap"
@@ -177,6 +176,15 @@
         </div>
       </div>
     </main>
+
+    <!-- About Me Section -->
+    <div
+      id="about-me-section"
+      class="w-screen h-screen absolute z-20 top-0 hidden items-center justify-center backdrop-blur-md"
+      onclick="CloseTab();"
+    >
+      <div id="informations" class="w-[70%] h-[90%] bg-[#191919] "></div>
+    </div>
   </body>
 
   <script src="src/script.js"></script>

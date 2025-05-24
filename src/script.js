@@ -47,3 +47,15 @@ function animationText(oldText, newText) {
 }
 
 setInterval(changeTech, 3000);
+
+const aboutSectionBtn = document.getElementById("aboutmeBtn");
+const aboutSection = document.getElementById("about-me-section");
+
+function activeAboutSec() {
+  aboutSection.classList.remove("hidden");
+  aboutSection.classList.add("flex");
+}
+function CloseTab() {
+  aboutSection.classList.remove("flex");
+  aboutSection.classList.add("hidden");
+}
