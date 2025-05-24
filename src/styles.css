@@ -11,6 +11,9 @@
 #bio {
   font-family: "Montserrat", sans-serif;
 }
+#tech {
+  font-family: "Oswald", sans-serif;
+}
 
 #aboutmeBtn{
   background: -webkit-gradient(
@@ -50,3 +53,12 @@
   }
 }
 
+.out{
+  transform: translateY(-10px);
+  opacity: 0;
+}
+
+.in{
+  transform: translateY(0px);
+  opacity: 1;
+}
