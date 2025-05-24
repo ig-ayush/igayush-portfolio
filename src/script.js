@@ -48,6 +48,7 @@ function animationText(oldText, newText) {
 
 setInterval(changeTech, 3000);
 
+// About section
 const aboutSectionBtn = document.getElementById("aboutmeBtn");
 const aboutSection = document.getElementById("about-me-section");
 
