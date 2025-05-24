@@ -31,7 +31,6 @@ function animationText(oldText, newText) {
   buildTexts.textContent = "";
 
   for (let i = 0; i < maxLen; i++) {
-    console.log("hwllo");
     let oldChar = oldText[i] || "";
     let newChar = newText[i] || "";
     if (oldChar !== newChar) {
@@ -47,4 +46,4 @@ function animationText(oldText, newText) {
   }
 }
 
-setInterval(changeTech,3000);
+setInterval(changeTech, 3000);
