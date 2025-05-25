@@ -52,10 +52,12 @@ setInterval(changeTech, 3000);
 const aboutSectionBtn = document.getElementById("aboutmeBtn");
 const aboutSection = document.getElementById("about-me-section");
 
-function activeAboutSec() {
+aboutSectionBtn.addEventListener("click", () => {
   aboutSection.classList.remove("hidden");
   aboutSection.classList.add("flex");
-}
+
+  document.title = "About | Ayush Acharya"
+});
 function CloseTab() {
   aboutSection.classList.remove("flex");
   aboutSection.classList.add("hidden");

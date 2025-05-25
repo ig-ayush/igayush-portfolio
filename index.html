@@ -122,7 +122,6 @@
         <button
           id="aboutmeBtn"
           class="absolute lg:left-[250px] lg:top-[250px] md:left-[80px] md:top-[230px] rounded-lg p-3 sm:w-[150px] text-lg font-bold pointer-events-auto transition duration-500 hover:translate-x-4 group sm:left-[40px] sm:top-[230px] left-[40px] top-[230px]"
-          onclick="activeAboutSec();"
         >
           About
           <span
@@ -180,10 +179,95 @@
     <!-- About Me Section -->
     <div
       id="about-me-section"
-      class="w-screen h-screen absolute z-20 top-0 hidden items-center justify-center backdrop-blur-md"
+      class="w-screen h-screen absolute z-20 top-0 flex items-center justify-center backdrop-blur-sm"
       onclick="CloseTab()"
     >
-      <div id="informations" class="w-[70%] h-[90%] bg-[#191919] "></div>
+      <div
+        id="informations"
+        class="lg:w-[75%] lg:h-[95%] w-[95%] h-[85%] bg-[#191919] rounded-2xl p-5 flex justify-center items-center"
+      >
+        <div id="sections" class="w-[70vw] h-[90vh] flex p-3">
+          <div id="self-things" class="border-1 w-[50%] h-[100vh]] p-10">
+            <div id="texts" class="p-4">
+              <p class="text-shadow-md mb-2">About me</p>
+              <h1 class="text-3xl mb-8">
+                <span class="text-[#f77f00] font-bold">Hi there!</span> I<span
+                  class="text-[#f77f00] font-bold"
+                  >’</span
+                >m <b>Ayush Acharya</b>
+              </h1>
+              <h1 class="text-lg flex flex-col gap-3">
+                <section>
+                  I’m <b>Ayush Acharya</b>, a passionate full stack developer
+                  who enjoys building clean, responsive, and user-friendly web
+                  applications. I’m currently training at <b>KodNest</b> to
+                  build comprehensive front-end and back-end software and web
+                  applications, with a strong focus on the
+                  <b>Java and Python</b> tech stack.
+                </section>
+
+                <section>
+                  Driven by a genuine interest in solving real-world problems
+                  through thoughtful design and efficient code, I love
+                  transforming ideas into meaningful digital experiences.
+                </section>
+
+                <section>
+                  Learning to code, coding to learn, and loving every bit of it.
+                  <br />
+                  <ul class="flex gap-5 text-[#f77f00] mt-2">
+                    <li>
+                      <a href="" class="hover:text-white"
+                        ><i class="fa-brands fa-linkedin"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a href="" class="hover:text-white"
+                        ><i class="fa-brands fa-square-x-twitter"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a href="" class="hover:text-white"
+                        ><i class="fa-brands fa-github"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </section>
+              </h1>
+            </div>
+
+            <div id="tech-stack" class="p-4">
+              <h1 class="text-white font-bold text-3xl">
+                <span class="text-[#f77f00]">T</span>ech Stacks
+              </h1>
+              <div id="images" class="p-8 flex gap-7 justify-center mt-5">
+                <img src="./Assets/Images/JS.png" alt="" class="h-[70px]" />
+                <img src="./Assets/Images/java.png" alt="" class="h-[80px]" />
+                <img src="./Assets/Images/nodeJs.png" alt="" class="h-[70px]" />
+                <img
+                  src="./Assets/Images/TailwindCSS.png"
+                  alt=""
+                  class="h-[50px]"
+                />
+                <img
+                  src="./Assets/Images/reactJS.png"
+                  alt=""
+                  class="h-[70px]"
+                />
+              </div>
+            </div>
+            <div id="education-btn" class="flex justify-center mt-2">
+              <button
+                class="text-md lg:text-xl font-bold lg:w-[130px] md:w-[140px] lg:p-2 p-3 rounded-lg bg-orange-500 text-white hover:-translate-y-3 duration-400 transition-all ease-in-out"
+              >
+                Education
+              </button>
+            </div>
+          </div>
+
+          <div id="pictures" class="border-1 w-[50%] h-[100vh]]"></div>
+        </div>
+      </div>
     </div>
   </body>
 

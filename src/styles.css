@@ -62,5 +62,21 @@
   transform: translateY(0px);
   opacity: 1;
 }
+#about-me-section{
+  animation: pop-up .3s ease-in-out;
+}
+#about-me-section.flex #informations{
+  animation: pop-up .5s ease-in-out;
+}
 
+@keyframes pop-up{
+  from{
+    transform: translateY(-50px);
+    opacity: 0;
+  }
 
+  to{
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
