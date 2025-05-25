@@ -179,30 +179,31 @@
     <!-- About Me Section -->
     <div
       id="about-me-section"
-      class="w-screen h-screen absolute z-20 top-0 flex items-center justify-center backdrop-blur-sm"
+      class="w-full min-h-screen absolute z-20 top-0 hidden items-start justify-center backdrop-blur-sm overflow-y-auto p-4"
       onclick="CloseTab()"
     >
       <div
         id="informations"
-        class="lg:w-[75%] lg:h-[95%] md:w-[95%] md:h-[90%] bg-[#191919] rounded-2xl p-5 flex justify-center items-center"
+        class="w-[95vw] h-auto bg-[#191919] rounded-2xl p-4 sm:p-5 flex justify-center items-start"
       >
         <div
           id="sections"
-          class="w-[70vw] h-[90vh] flex  xl:flex-row lg:flex-col p-3"
+          class="w-full flex flex-col lg:flex-row gap-6 overflow-y-auto"
         >
+          <!-- Left Section -->
           <div
             id="self-things"
-            class="border-1 xl:w-[50%] lg:w-[90%] lg:h-[50%]] p-10"
+            class="lg:w-1/2 w-full p-4 sm:p-6 flex flex-col justify-between gap-6"
           >
-            <div id="texts" class="p-4">
-              <p class="text-shadow-md mb-2">About me</p>
-              <h1 class="text-3xl mb-8">
-                <span class="text-[#f77f00] font-bold">Hi there!</span> I<span
-                  class="text-[#f77f00] font-bold"
-                  >’</span
-                >m <b>Ayush Acharya</b>
+            <!-- Text -->
+            <div id="texts" class="p-2 sm:p-4">
+              <p class="text-shadow-md mb-2 text-sm sm:text-base">About me</p>
+              <h1 class="text-lg sm:text-xl md:text-3xl mb-4 sm:mb-6">
+                <span class="text-[#f77f00] font-bold">Hi there!</span> I
+                <span class="text-[#f77f00] font-bold">’</span>m
+                <b>Ayush Acharya</b>
               </h1>
-              <h1 class="text-lg flex flex-col gap-3">
+              <div class="text-sm sm:text-base flex flex-col gap-3">
                 <section>
                   I’m <b>Ayush Acharya</b>, a passionate full stack developer
                   who enjoys building clean, responsive, and user-friendly web
@@ -220,73 +221,85 @@
 
                 <section>
                   Learning to code, coding to learn, and loving every bit of it.
-                  <br />
                   <ul class="flex gap-5 text-[#f77f00] mt-2">
                     <li>
-                      <a href="" class="hover:text-white"
+                      <a href="#" class="hover:text-white"
                         ><i class="fa-brands fa-linkedin"></i
                       ></a>
                     </li>
                     <li>
-                      <a href="" class="hover:text-white"
+                      <a href="#" class="hover:text-white"
                         ><i class="fa-brands fa-square-x-twitter"></i
                       ></a>
                     </li>
                     <li>
-                      <a href="" class="hover:text-white"
+                      <a href="#" class="hover:text-white"
                         ><i class="fa-brands fa-github"></i
                       ></a>
                     </li>
                   </ul>
                 </section>
-              </h1>
+              </div>
             </div>
 
-            <div id="tech-stack" class="p-4">
-              <h1 class="text-white font-bold text-3xl">
+            <!-- Tech Stack -->
+            <div id="tech-stack" class="p-2 sm:p-4 md:p-8">
+              <h1 class="text-white font-bold text-xl sm:text-2xl md:text-3xl">
                 <span class="text-[#f77f00]">T</span>ech Stacks
               </h1>
-              <div id="images" class="p-8 flex gap-7 justify-center mt-5">
+              <div
+                class="p-4 sm:p-6 flex flex-wrap gap-5 sm:gap-7 justify-center mt-4"
+              >
                 <img
                   src="./Assets/Images/JS.png"
-                  alt=""
-                  class="xl:h-[70px] lg:h-[30px]"
+                  alt="JS"
+                  class="h-[35px] sm:h-[40px] md:h-[50px]"
                 />
                 <img
                   src="./Assets/Images/java.png"
-                  alt=""
-                  class="xl:h-[80px] lg:h-[30px]"
+                  alt="Java"
+                  class="h-[35px] sm:h-[40px] md:h-[50px]"
                 />
                 <img
                   src="./Assets/Images/nodeJs.png"
-                  alt=""
-                  class="xl:h-[70px] lg:h-[30px]"
+                  alt="Node.js"
+                  class="h-[35px] sm:h-[40px] md:h-[50px]"
                 />
                 <img
                   src="./Assets/Images/TailwindCSS.png"
-                  alt=""
-                  class="xl:h-[50px] lg:h-[30px]"
+                  alt="TailwindCSS"
+                  class="h-[35px] sm:h-[40px] md:h-[50px]"
                 />
                 <img
                   src="./Assets/Images/reactJS.png"
-                  alt=""
-                  class="xl:h-[70px] lg:h-[30px]"
+                  alt="React"
+                  class="h-[35px] sm:h-[40px] md:h-[50px]"
                 />
               </div>
             </div>
-            <div id="education-btn" class="flex justify-center mt-2">
+
+            <!-- Button -->
+            <div id="education-btn" class="flex justify-center px-2 sm:px-4">
               <button
-                class="text-md lg:text-xl font-bold lg:w-[130px] md:w-[140px] lg:p-2 p-3 rounded-lg bg-orange-500 text-white hover:-translate-y-3 duration-400 transition-all ease-in-out"
+                class="text-sm sm:text-md text-white font-bold bg-orange-500 hover:-translate-y-2 transition-all duration-300 ease-in-out px-5 py-3 rounded-lg w-full sm:w-[140px]"
               >
                 Education
               </button>
             </div>
           </div>
 
+          <!-- Picture Section -->
+
           <div
             id="pictures"
-            class="border-1 xl:w-[50%] lg:w-[90%] lg:h-[50%]] flex items-center"
+            class="w-full lg:w-1/2 flex items-center justify-center p-4 relative"
           >
+            <div
+              id="cancle"
+              class="absolute right-[80px] top-[20px] text-4xl cursor-pointer hover:rotate-45 transition-transform duration-200"
+            >
+              <i class="fa-solid fa-xmark"></i>
+            </div>
             <svg
               width="900"
               height="600"
