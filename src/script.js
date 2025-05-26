@@ -52,7 +52,7 @@ setInterval(changeTech, 3000);
 const aboutSectionBtn = document.getElementById("aboutmeBtn");
 const aboutSection = document.getElementById("about-me-section");
 const inforDiv = document.getElementById("information");
-const cancleBtn = document.getElementById('cancle')
+const cancleBtn = document.getElementById("cancle");
 
 aboutSectionBtn.addEventListener("click", () => {
   aboutSection.classList.remove("hidden");
@@ -68,4 +68,14 @@ cancleBtn.addEventListener("click", () => {
 function CloseTab() {
   aboutSection.classList.remove("flex");
   aboutSection.classList.add("hidden");
+  
+  document.title = "ig-ayush | Portfolio";
 }
+
+// Education Link
+const Edubtn = document.getElementById("Education");
+
+Edubtn.addEventListener(
+  "click",
+  () => (window.location.href = "./src/Education/index.html")
+);
