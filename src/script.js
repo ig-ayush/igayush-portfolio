@@ -51,13 +51,20 @@ setInterval(changeTech, 3000);
 // About section
 const aboutSectionBtn = document.getElementById("aboutmeBtn");
 const aboutSection = document.getElementById("about-me-section");
+const inforDiv = document.getElementById("information");
+const cancleBtn = document.getElementById('cancle')
 
 aboutSectionBtn.addEventListener("click", () => {
   aboutSection.classList.remove("hidden");
   aboutSection.classList.add("flex");
 
-  document.title = "About | Ayush Acharya"
+  document.title = "About | Ayush Acharya";
 });
+
+cancleBtn.addEventListener("click", () => {
+  CloseTab();
+});
+
 function CloseTab() {
   aboutSection.classList.remove("flex");
   aboutSection.classList.add("hidden");
