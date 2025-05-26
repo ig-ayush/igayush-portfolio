@@ -68,14 +68,19 @@ cancleBtn.addEventListener("click", () => {
 function CloseTab() {
   aboutSection.classList.remove("flex");
   aboutSection.classList.add("hidden");
-  
+
   document.title = "ig-ayush | Portfolio";
 }
 
 // Education Link
 const Edubtn = document.getElementById("Education");
+const AboutEduBtn = document.getElementById("education-btn");
 
 Edubtn.addEventListener(
+  "click",
+  () => (window.location.href = "./src/Education/index.html")
+);
+AboutEduBtn.addEventListener(
   "click",
   () => (window.location.href = "./src/Education/index.html")
 );
