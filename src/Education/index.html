@@ -16,19 +16,29 @@
       referrerpolicy="no-referrer"
     />
   </head>
-  <body class="bg-[#111] text-white">
+  <body class="bg-[#111] text-white overflow-x-hidden">
     <!-- NavBar -->
     <nav
-      class="w-screen h-[50px] lg:pr-[10rem] lg:pl-[10rem] p-8 flex "
+      class="w-screen h-[50px]  p-8 flex justify-around"
     >
       <h1 class="lg:text-3xl text-2xl cursor-pointer w-max" id="logo">
         <span class="text-[#f77f00]" id="ig-ayush">ig</span>-ayush
       </h1>
-      <!-- <div id="menu-bar" class="">
+      <div id="menu-bar" class="lg:text-3xl text-2xl cursor-pointer">
         <i class="fa-solid fa-bars"></i>
-      </div> -->
+      </div>
     </nav>
-
+    <!-- Nav Contetn -->
+     <nav class=" w-screen h-screen absolute top-0  justify-end backdrop-blur-sm z-20 hidden" id="menu-nav">
+      <ul id="menu" class="relative bg-[#212529] lg:w-1/5 w-10/12  h-auto flex flex-col gap-[80px] pt-[100px] pl-[30px] p-5 text-2xl font-bold ">
+        <li class="w-full flex justify-end pr-5 absolute right-8 top-10 text-2xl hover:text-[#f77f00] duration-300">
+          <i class="fa-solid fa-xmark" id="menu-nav"></i>
+        </li>
+        <li class="hover:text-[#f77f00] duration-300"><a href="../../index.html">Home</a></li>
+        <li class="hover:text-[#f77f00] duration-300"><a href="">Projects</a></li>
+        <li class="hover:text-[#f77f00] duration-300"><a href="">Contacts</a></li>
+      </ul>
+     </nav>
     <!-- Main content -->
 
     <main>
