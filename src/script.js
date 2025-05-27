@@ -84,3 +84,10 @@ AboutEduBtn.addEventListener(
   "click",
   () => (window.location.href = "./src/Education/index.html")
 );
+
+// Project Page Link
+const Projects = document.getElementById("Projects");
+Projects.addEventListener(
+  "click",
+  () => (window.location.href = "./src/Projects/index.html")
+);
