@@ -14,43 +14,32 @@
       referrerpolicy="no-referrer"
     />
     <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="projects.css">
 
   </head>
   <body class="bg-[#111] text-white min-h-screen overflow-x-hidden">
-    <!-- NavBar -->
-    <nav class="w-full h-[50px] p-4 sm:p-8 flex justify-between items-center">
-      <h1 class="text-xl sm:text-2xl lg:text-3xl cursor-pointer w-max" id="logo">
+       <!-- NavBar -->
+    <nav
+      class="w-screen h-[50px]  p-8 flex justify-around"
+    >
+      <h1 class="lg:text-3xl text-2xl cursor-pointer w-max" id="logo">
         <span class="text-[#f77f00]" id="ig-ayush">ig</span>-ayush
       </h1>
-      <div id="menu-bar" class="text-xl sm:text-2xl lg:text-3xl cursor-pointer">
+      <div id="menu-bar" class="lg:text-3xl text-2xl cursor-pointer">
         <i class="fa-solid fa-bars"></i>
       </div>
     </nav>
-    <!-- Nav Content -->
-    <nav
-      class="w-full h-screen absolute top-0 right-0 backdrop-blur-sm z-20 hidden"
-      id="menu-nav"
-    >
-      <ul
-        id="menu"
-        class="relative bg-[#212529] w-full sm:w-3/4 lg:w-1/5 h-auto flex flex-col gap-6 pt-16 pl-4 p-5 text-lg sm:text-xl lg:text-2xl font-bold"
-      >
-        <li
-          class="w-full flex justify-end pr-5 absolute right-4 top-4 text-xl sm:text-2xl hover:text-[#f77f00] duration-300"
-        >
-          <i class="fa-solid fa-xmark" id="menu-nav-close"></i>
+    <!-- Nav Contetn -->
+     <nav class=" w-screen h-screen absolute top-0  justify-end backdrop-blur-sm z-20 hidden" id="menu-nav">
+      <ul id="menu" class="relative bg-[#212529] lg:w-1/5 w-10/12  h-auto flex flex-col gap-[80px] pt-[100px] pl-[30px] p-5 text-2xl font-bold ">
+        <li class="w-full flex justify-end pr-5 absolute right-8 top-10 text-2xl hover:text-[#f77f00] duration-300">
+          <i class="fa-solid fa-xmark" id="menu-nav"></i>
         </li>
-        <li class="hover:text-[#f77f00] duration-300">
-          <a href="../../index.html">Home</a>
-        </li>
-        <li class="hover:text-[#f77f00] duration-300">
-          <a href="../Education/index.html">Education</a>
-        </li>
-        <li class="hover:text-[#f77f00] duration-300">
-          <a href="">Contacts</a>
-        </li>
+        <li class="hover:text-[#f77f00] duration-300"><a href="../../index.html">Home</a></li>
+        <li class="hover:text-[#f77f00] duration-300"><a href="../Projects/index.html">Projects</a></li>
+        <li class="hover:text-[#f77f00] duration-300"><a href="">Contacts</a></li>
       </ul>
-    </nav>
+     </nav>
 
     <!-- Main Content -->
     <main>
@@ -68,7 +57,7 @@
       >
         <div
           id="line"
-          class="w-[2px] lg:h-[550vh] xl:h-[290vh] -z-10 bg-[#f77f00] relative"
+          class="w-[2px] h-[280vh] -z-10 bg-[#f77f00] relative"
         ></div>
       </div>
       <div id="projects" class="w-full h-auto flex flex-col lg:gap-8 gap-15 ">
@@ -86,7 +75,7 @@
               <div
                 id="p1-o"
                 class="w-6 h-6 bg-[#f77f00] rounded-full absolute -right-3 cursor-pointer z-20 hover:bg-white transition-all duration-300 hidden lg:block"
-                onclick="window.open('https://ig-ayush.github.io/Trendfeet-marketplace/')"
+                onclick="window.open('https://track-mate-eight.vercel.app/')"
               ></div>
               <img
                 src="../../Assets/Images/Projects/TrendFeet.png"
@@ -425,7 +414,7 @@
               <div
                 id="p4-o"
                 class="w-6 h-6 bg-[#f77f00] rounded-full absolute -left-3 cursor-pointer z-20 hover:bg-white transition-all duration-300 hidden lg:block"
-                onclick="window.open('https://trackmate-expense-tracker.vercel.app/')"
+                onclick="window.open('https://track-mate-eight.vercel.app/')"
               ></div>
               <img
                 src="../../Assets/Images/Projects/expence-tracker.jpg"
@@ -438,7 +427,7 @@
                 <li
                   class="border p-3 sm:p-4 text-lg sm:text-xl rounded-lg font-semibold border-[#f5a248] hover:bg-[#f77f00] transition-all duration-500 group"
                 >
-                  <a href="https://github.com/ig-ayush/TrackMate" target="_blank"
+                  <a href="https://github.com/ig-ayush/Expense-tracker" target="_blank"
                     >Github
                     <span class="group-hover:underline group-hover:text-black"
                       >Link</span
@@ -448,7 +437,7 @@
                 <li
                   class="border p-3 sm:p-4 text-lg sm:text-xl rounded-lg font-semibold border-[#f77f00] hover:bg-[#f77f00] transition-all duration-500 group"
                 >
-                  <a href="https://trackmate-expense-tracker.vercel.app/" target="_blank"
+                  <a href="https://track-mate-eight.vercel.app/" target="_blank"
                     >Live
                     <span class="group-hover:underline group-hover:text-black"
                       >Demo</span
@@ -525,6 +514,10 @@
           </div>
         </div>
       </div>
+
+      <footer class="w-screen">
+        
+      </footer>
     </main>
     <script src="project.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
