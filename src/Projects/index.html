@@ -14,6 +14,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
   </head>
   <body class="bg-[#111] text-white overflow-x-hidden">
     <!-- NavBar -->
@@ -60,40 +61,43 @@
           My Projects
         </h1>
       </div>
+      <!-- Line -->
       <div
         id="line-con"
-        class="w-screen h-auto flex justify-center absolute pointer-events-none"
+        class="w-screen max-h-screen flex justify-center absolute pointer-events-none"
       >
-        <div id="line" class="w-[2px] h-[80vh] bg-[#f77f00]"></div>
+        <div
+          id="line"
+          class="w-[2px] h-[290vh] -z-10 bg-[#f77f00] relative"
+        ></div>
       </div>
-      <div id="projects" class="w-screen h-auto">
-
-        <!-- TrendFeet -->
+      <div id="projects" class="w-screen h-auto flex flex-col gap-8">
+        <!-- Project 1 -->
         <div id="project-1" class="w-screen relative flex">
-          <div id="project-View-details" class="w-1/2">
+          <div id="project-View" class="w-1/2">
             <div
-              id="p1-view"
+              id="p3-view"
               class="flex justify-center items-center w-full p-18 relative"
             >
               <div
-                id="p1-l"
+                id="p3-l"
                 class="absolute right-0 w-1/2 h-[2px] bg-[#f77f00] -z-10 flex justify-end items-center"
               ></div>
               <div
-                id="p1-o"
+                id="p3-o"
                 class="w-6 h-6 bg-[#f77f00] rounded-full absolute -right-3 cursor-pointer z-20 hover:bg-white transition-all duration-300"
                 onclick="window.open('https://ig-ayush.github.io/Trendfeet-marketplace/',)"
               ></div>
               <img
                 src="../../Assets/Images/Projects/TrendFeet.png"
                 alt="TrendFeet-project"
-                class="border-5 border-transparent rounded-3xl"
+                class="border-5 border-[#f77f00] rounded-3xl"
               />
             </div>
             <div id="p1-links" class="w-full flex justify-center">
               <ul class="flex gap-10">
                 <li
-                  class="border p-3 rounded-lg font-semibold border-[#f77f00] hover:bg-[#f77f00] transition-all duration-500 group"
+                  class="border p-4 text-xl rounded-lg font-semibold border-[#f5a248] hover:bg-[#f77f00] transition-all duration-500 group"
                 >
                   <a href=""
                     >Github
@@ -103,7 +107,7 @@
                   >
                 </li>
                 <li
-                  class="border p-3 rounded-lg font-semibold border-[#f77f00] hover:bg-[#f77f00] transition-all duration-500 group"
+                  class="border p-4 text-xl rounded-lg font-semibold border-[#f77f00] hover:bg-[#f77f00] transition-all duration-500 group"
                 >
                   <a href=""
                     >Live
@@ -115,12 +119,356 @@
               </ul>
             </div>
           </div>
-          <div id="p1-info" class="w-1/2">
+          <div
+            id="p3-info"
+            class="w-1/2 p-20 flex flex-col gap-[3rem]"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+          >
+            <h1 class="text-4xl font-semibold">
+              <span class="text-[#f77f00] font-bold text-5xl">TrendFeet</span> –
+              Footwear Marketplace
+            </h1>
+            <p class="text-2xl [word-spacing:0.35rem]">
+              TrendFeet is a local footwear marketplace web app that connects
+              customers with nearby shoe sellers. Users can browse, explore, and
+              order products directly from local vendors. Built with HTML, CSS,
+              JavaScript, and Firebase for backend and data storage, this
+              project ensures a seamless experience for both users and sellers.
+              It’s designed to support small businesses with an easy-to-use
+              online platform.
+            </p>
+            <ul class="flex gap-8 flex-wrap">
+              <li class="p-4 border-3 w-max rounded-2xl text-xl">#HTML</li>
+              <li class="p-4 border-3 w-max rounded-2xl text-xl">#CSS</li>
+              <li class="p-4 border-3 w-max rounded-2xl text-xl">
+                #JavaScript
+              </li>
+              <li class="p-4 border-3 w-max rounded-2xl text-xl">#Firebase</li>
+              <li class="p-4 border-3 w-max rounded-2xl text-xl">#VS Code</li>
+              <li class="p-4 border-3 w-max rounded-2xl text-xl">#Git</li>
+              <li class="p-4 border-3 w-max rounded-2xl text-xl">#GitHub</li>
+            </ul>
+          </div>
+        </div>
 
+        <!-- Project 2 -->
+        <div id="project-2" class="w-screen relative flex">
+          <div
+            id="p4-info"
+            class="w-1/2 p-20 flex flex-col gap-[3rem]"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+          >
+            <h1 class="text-4xl font-semibold">
+              <span class="text-[#f77f00] font-bold text-5xl">Recipe Book</span>
+              – Recipe Management Web App
+            </h1>
+            <p class="text-2xl [word-spacing:0.35rem]">
+              A modern and user-friendly Recipe Book web app designed to help
+              users discover and explore a variety of delicious recipes. Built
+              with clean design and smooth navigation for an enjoyable cooking
+              experience. Features easy browsing, recipe details, and a
+              responsive layout for all devices. Showcases my skills in frontend
+              development and UI/UX design.
+            </p>
+            <ul class="flex gap-8 flex-wrap">
+              <li class="p-4 border-3 w-max rounded-2xl text-xl">#React.js</li>
+              <li class="p-4 border-3 w-max rounded-2xl text-xl">#CSS</li>
+              <li class="p-4 border-3 w-max rounded-2xl text-xl">
+                #JavaScript
+              </li>
+              <li class="p-4 border-3 w-max rounded-2xl text-xl">
+                #Material-UI
+              </li>
+              <li class="p-4 border-3 w-max rounded-2xl text-xl">#VS Code</li>
+              <li class="p-4 border-3 w-max rounded-2xl text-xl">#Vercel</li>
+              <li class="p-4 border-3 w-max rounded-2xl text-xl">#GitHub</li>
+              <li class="p-4 border-3 w-max rounded-2xl text-xl">#REST API</li>
+            </ul>
+          </div>
+          <div id="project-View" class="w-1/2">
+            <div
+              id="p4-view"
+              class="flex justify-center items-center w-full p-18 relative"
+            >
+              <div
+                id="p2-l"
+                class="absolute left-0 h-[2px] bg-[#f77f00] w-1/2 -z-10 flex justify-end items-center"
+              ></div>
+              <div
+                id="p2-o"
+                class="w-6 h-6 bg-[#f77f00] rounded-full absolute -left-3 cursor-pointer z-20 hover:bg-white transition-all duration-300"
+                onclick="window.open('https://ig-ayush.github.io/Trendfeet-marketplace/',)"
+              ></div>
+              <img
+                src="../../Assets/Images/Projects/Recipe-book.png"
+                alt="TrendFeet-project"
+                class="border-5 border-[#f77f00] rounded-3xl"
+              />
+            </div>
+            <div id="p2-links" class="w-full flex justify-center">
+              <ul class="flex gap-10">
+                <li
+                  class="border p-4 text-xl rounded-lg font-semibold border-[#f5a248] hover:bg-[#f77f00] transition-all duration-500 group"
+                >
+                  <a
+                    href="https://github.com/ig-ayush/Recipe-Book"
+                    target="_blank"
+                    >Github
+                    <span class="group-hover:underline group-hover:text-black"
+                      >Link</span
+                    ></a
+                  >
+                </li>
+                <li
+                  class="border p-4 text-xl rounded-lg font-semibold border-[#f77f00] hover:bg-[#f77f00] transition-all duration-500 group"
+                >
+                  <a
+                    href="https://recipe-book-two-puce.vercel.app/"
+                    target="_blank"
+                    >Live
+                    <span class="group-hover:underline group-hover:text-black"
+                      >Demo</span
+                    ></a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div id="project-3" class="w-screen relative flex">
+          <div id="project-View" class="w-1/2">
+            <div
+              id="p3-view"
+              class="flex justify-center items-center w-full p-18 relative"
+            >
+              <div
+                id="p3-l"
+                class="absolute right-0 w-1/2 h-[2px] bg-[#f77f00] -z-10 flex justify-end items-center"
+              ></div>
+              <div
+                id="p3-o"
+                class="w-6 h-6 bg-[#f77f00] rounded-full absolute -right-3 cursor-pointer z-20 hover:bg-white transition-all duration-300"
+                onclick="window.open('https://ig-ayush.github.io/Trendfeet-marketplace/',)"
+              ></div>
+              <img
+                src="../../Assets/Images/Projects/E-commerce.png"
+                alt="TrendFeet-project"
+                class="border-5 border-[#f77f00] rounded-3xl"
+              />
+            </div>
+            <div id="p3-links" class="w-full flex justify-center">
+              <ul class="flex gap-10">
+                <li
+                  class="border p-4 text-xl rounded-lg font-semibold border-[#f5a248] hover:bg-[#f77f00] transition-all duration-500 group"
+                >
+                  <a href="https://github.com/ig-ayush/E-commerce"
+                    >Github
+                    <span class="group-hover:underline group-hover:text-black"
+                      >Link</span
+                    ></a
+                  >
+                </li>
+                <li
+                  class="border p-4 text-xl rounded-lg font-semibold border-[#f77f00] hover:bg-[#f77f00] transition-all duration-500 group"
+                >
+                  <a href="https://e-commerce-xi-kohl.vercel.app/"
+                    >Live
+                    <span class="group-hover:underline group-hover:text-black"
+                      >Demo</span
+                    ></a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div
+            id="p3-info"
+            class="w-1/2 p-20 flex flex-col gap-[3rem]"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+          >
+            <h1 class="text-4xl font-semibold">
+              <span class="text-[#f77f00] font-bold text-5xl">E-Commerce</span>
+              – Modern UI for Online Stores
+            </h1>
+            <p class="text-2xl [word-spacing:0.35rem]">
+              A fully responsive e-commerce website design built to showcase a
+              clean and intuitive user interface. Crafted using Tailwind CSS for
+              fast, mobile-friendly styling and layout. Focuses on the visual
+              structure of product listings, categories, and homepage flow.
+              Demonstrates frontend design skills and responsive web layout
+              techniques.
+            </p>
+            <ul class="flex gap-8 flex-wrap">
+              <li class="p-4 border-3 w-max rounded-2xl text-xl">
+                #Tailwind CSS
+              </li>
+              <li class="p-4 border-3 w-max rounded-2xl text-xl">#HTML</li>
+              <li class="p-4 border-3 w-max rounded-2xl text-xl">
+                #JavaScript
+              </li>
+              <li class="p-4 border-3 w-max rounded-2xl text-xl">#VS Code</li>
+              <li class="p-4 border-3 w-max rounded-2xl text-xl">#Vercel</li>
+              <li class="p-4 border-3 w-max rounded-2xl text-xl">#Git</li>
+              <li class="p-4 border-3 w-max rounded-2xl text-xl">#GitHub</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div id="project-4" class="w-screen relative flex">
+          <div
+            id="p4-info"
+            class="w-1/2 p-20 flex flex-col gap-[3rem]"
+            data-aos="fade-up"
+            data-aos-duration="1500"
+          >
+            <h1 class="text-4xl font-semibold">
+              <span class="text-[#f77f00] font-bold text-5xl">TrackMate </span>
+              – Balance & Expense Tracker
+            </h1>
+            <p class="text-2xl [word-spacing:0.35rem]">
+              A mobile-first expense tracker that lets users manage their daily
+              spending effortlessly. Users can input their total balance, add or
+              edit expenses, and see real-time updates to their remaining
+              balance. Logical functionalities are built using JavaScript to
+              ensure smooth user interactions and dynamic updates. Designed with
+              Tailwind CSS to provide a clean, responsive interface optimized
+              for smartphones.
+            </p>
+            <ul class="flex gap-8 flex-wrap">
+              <li class="p-4 border-3 w-max rounded-2xl text-xl">#HTML</li>
+              <li class="p-4 border-3 w-max rounded-2xl text-xl">
+                #JavaScript
+              </li>
+              <li class="p-4 border-3 w-max rounded-2xl text-xl">
+                #Tailwind CSS
+              </li>
+              <li class="p-4 border-3 w-max rounded-2xl text-xl">#Vercel</li>
+              <li class="p-4 border-3 w-max rounded-2xl text-xl">#VS Code</li>
+              <li class="p-4 border-3 w-max rounded-2xl text-xl">#GitHub</li>
+            </ul>
+          </div>
+          <div id="project-View" class="w-1/2">
+            <div
+              id="p4-view"
+              class="flex justify-center items-center w-full p-18 relative"
+            >
+              <div
+                id="p4-l"
+                class="absolute left-0 h-[2px] bg-[#f77f00] w-1/2 -z-10 flex justify-end items-center"
+              ></div>
+              <div
+                id="p4-o"
+                class="w-6 h-6 bg-[#f77f00] rounded-full absolute -left-3 cursor-pointer z-20 hover:bg-white transition-all duration-300"
+                onclick="window.open('https://ig-ayush.github.io/Trendfeet-marketplace/',)"
+              ></div>
+              <img
+                src="../../Assets/Images/Projects/expence-tracker.jpg"
+                alt="TrendFeet-project"
+                class="border-5 border-[#f77f00] rounded-3xl h-[500px] w-[300px]"
+              />
+            </div>
+            <div id="p4-links" class="w-full flex justify-center">
+              <ul class="flex gap-10">
+                <li
+                  class="border p-4 text-xl rounded-lg font-semibold border-[#f5a248] hover:bg-[#f77f00] transition-all duration-500 group"
+                >
+                  <a
+                    href="https://github.com/ig-ayush/Recipe-Book"
+                    target="_blank"
+                    >Github
+                    <span class="group-hover:underline group-hover:text-black"
+                      >Link</span
+                    ></a
+                  >
+                </li>
+                <li
+                  class="border p-4 text-xl rounded-lg font-semibold border-[#f77f00] hover:bg-[#f77f00] transition-all duration-500 group"
+                >
+                  <a
+                    href="https://recipe-book-two-puce.vercel.app/"
+                    target="_blank"
+                    >Live
+                    <span class="group-hover:underline group-hover:text-black"
+                      >Demo</span
+                    ></a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Message -->
+        <div id="heading" class="mt-10 flex justify-center">
+          <h1
+            class="w-max border-3 text-3xl p-5 rounded-2xl font-bold border-[#f77f00] z-20 bg-[#111]"
+          >
+            Adding more projects soon
+          </h1>
+        </div>
+      </div>
+
+      <div
+        id="experience-sec"
+        class="p-10 w-screen flex flex-col justify-center items-center mt-10"
+      >
+        <h1 class="text-4xl font-bold mb-5">Experience</h1>
+        <div id="experience-con" class="w-1/2 h-auto">
+          <div id="codLab" class="w-full h-max flex flex-col p-5 bg-[#201d1d]">
+            <div
+              id="intro"
+              class="h-auto w-full p-8 flex justify-between items-center"
+            >
+              <img
+                src="../../Assets/Images/codelab.webp"
+                alt="codLab Image"
+                class="bg-white h-[150px] rounded-2xl"
+              />
+              <div id="details">
+                <h1 class="text-3xl font-bold p-3">CodeLab Systems</h1>
+                <p
+                  class="bg-[#111] w-max pl-5 pr-5 p-2 rounded-lg text-center font-semibold"
+                >
+                  Dec 2024 - Jan 2024
+                </p>
+              </div>
+            </div>
+            <div id="about" class="p-8">
+              <p class="text-xl text-[#9ca3af]">
+                Worked on developing and enhancing responsive web applications
+                using React.js. Built reusable components and implemented
+                dynamic UI features to improve user experience.Collaborated with
+                the development team on frontend tasks and followed best
+                practices in component-based architecture.
+              </p>
+            </div>
+            <div id="techs" class="p-8">
+              <ul class="flex gap-5">
+                <li class="bg-[#111] w-max p-2.5 rounded-lg">React</li>
+                <li class="bg-[#111] w-max p-2.5 rounded-lg">Node JS</li>
+                <li class="bg-[#111] w-max p-2.5 rounded-lg">JavaScript</li>
+                <li class="bg-[#111] w-max p-2.5 rounded-lg">Tailwind CSS</li>
+                <li class="bg-[#111] w-max p-2.5 rounded-lg">Github</li>
+                <li class="bg-[#111] w-max p-2.5 rounded-lg">Vercel</li>
+              </ul>
+            </div>
+            <div id="visit" class="p-8 flex justify-end">
+              <a href="" class="text-2xl pr-5  font-bold group">Visit <i class="fa-solid fa-arrow-right text-lg group-hover:translate-x-2 transition-transform duration-300"></i></a>
+            </div>
           </div>
         </div>
       </div>
     </main>
   </body>
   <script src="project.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </html>
