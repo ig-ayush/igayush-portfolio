@@ -6,6 +6,121 @@
     <title>ig-ayush | Projects</title>
     <link rel="icon" type="image/svg+xml" href="../../Assets/title.svg" />
     <link rel="stylesheet" href="../output.css" />
+    <link rel="stylesheet" href="projects.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
-  <body class="bg-[#111] text-white"></body>
+  <body class="bg-[#111] text-white overflow-x-hidden">
+    <!-- NavBar -->
+    <nav class="w-screen h-[50px] p-8 flex justify-around">
+      <h1 class="lg:text-3xl text-2xl cursor-pointer w-max" id="logo">
+        <span class="text-[#f77f00]" id="ig-ayush">ig</span>-ayush
+      </h1>
+      <div id="menu-bar" class="lg:text-3xl text-2xl cursor-pointer">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </nav>
+    <!-- Nav Contetn -->
+    <nav
+      class="w-screen h-screen absolute top-0 justify-end backdrop-blur-sm z-20 hidden"
+      id="menu-nav"
+    >
+      <ul
+        id="menu"
+        class="relative bg-[#212529] lg:w-1/5 w-10/12 h-auto flex flex-col gap-[80px] pt-[100px] pl-[30px] p-5 text-2xl font-bold"
+      >
+        <li
+          class="w-full flex justify-end pr-5 absolute right-8 top-10 text-2xl hover:text-[#f77f00] duration-300"
+        >
+          <i class="fa-solid fa-xmark" id="menu-nav"></i>
+        </li>
+        <li class="hover:text-[#f77f00] duration-300">
+          <a href="../../index.html">Home</a>
+        </li>
+        <li class="hover:text-[#f77f00] duration-300">
+          <a href="../Education/index.html">Education</a>
+        </li>
+        <li class="hover:text-[#f77f00] duration-300">
+          <a href="">Contacts</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- main content -->
+    <main>
+      <div id="heading" class="mt-10 flex justify-center">
+        <h1
+          class="w-max border-3 text-3xl p-5 rounded-2xl font-bold border-[#f77f00]"
+        >
+          My Projects
+        </h1>
+      </div>
+      <div
+        id="line-con"
+        class="w-screen h-auto flex justify-center absolute pointer-events-none"
+      >
+        <div id="line" class="w-[2px] h-[80vh] bg-[#f77f00]"></div>
+      </div>
+      <div id="projects" class="w-screen h-auto">
+
+        <!-- TrendFeet -->
+        <div id="project-1" class="w-screen relative flex">
+          <div id="project-View-details" class="w-1/2">
+            <div
+              id="p1-view"
+              class="flex justify-center items-center w-full p-18 relative"
+            >
+              <div
+                id="p1-l"
+                class="absolute right-0 w-1/2 h-[2px] bg-[#f77f00] -z-10 flex justify-end items-center"
+              ></div>
+              <div
+                id="p1-o"
+                class="w-6 h-6 bg-[#f77f00] rounded-full absolute -right-3 cursor-pointer z-20 hover:bg-white transition-all duration-300"
+                onclick="window.open('https://ig-ayush.github.io/Trendfeet-marketplace/',)"
+              ></div>
+              <img
+                src="../../Assets/Images/Projects/TrendFeet.png"
+                alt="TrendFeet-project"
+                class="border-5 border-transparent rounded-3xl"
+              />
+            </div>
+            <div id="p1-links" class="w-full flex justify-center">
+              <ul class="flex gap-10">
+                <li
+                  class="border p-3 rounded-lg font-semibold border-[#f77f00] hover:bg-[#f77f00] transition-all duration-500 group"
+                >
+                  <a href=""
+                    >Github
+                    <span class="group-hover:underline group-hover:text-black"
+                      >Link</span
+                    ></a
+                  >
+                </li>
+                <li
+                  class="border p-3 rounded-lg font-semibold border-[#f77f00] hover:bg-[#f77f00] transition-all duration-500 group"
+                >
+                  <a href=""
+                    >Live
+                    <span class="group-hover:underline group-hover:text-black"
+                      >Demo</span
+                    ></a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div id="p1-info" class="w-1/2">
+
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script src="project.js"></script>
 </html>
