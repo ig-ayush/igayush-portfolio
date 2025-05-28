@@ -18,9 +18,7 @@
   </head>
   <body class="bg-[#111] text-white overflow-x-hidden">
     <!-- NavBar -->
-    <nav
-      class="w-screen h-[50px]  p-8 flex justify-around"
-    >
+    <nav class="w-screen h-[50px] p-8 flex justify-around">
       <h1 class="lg:text-3xl text-2xl cursor-pointer w-max" id="logo">
         <span class="text-[#f77f00]" id="ig-ayush">ig</span>-ayush
       </h1>
@@ -29,16 +27,30 @@
       </div>
     </nav>
     <!-- Nav Contetn -->
-     <nav class=" w-screen h-screen absolute top-0  justify-end backdrop-blur-sm z-20 hidden" id="menu-nav">
-      <ul id="menu" class="relative bg-[#212529] lg:w-1/5 w-10/12  h-auto flex flex-col gap-[80px] pt-[100px] pl-[30px] p-5 text-2xl font-bold ">
-        <li class="w-full flex justify-end pr-5 absolute right-8 top-10 text-2xl hover:text-[#f77f00] duration-300">
+    <nav
+      class="w-screen h-screen absolute top-0 justify-end backdrop-blur-sm z-20 hidden"
+      id="menu-nav"
+    >
+      <ul
+        id="menu"
+        class="relative bg-[#212529] lg:w-1/5 w-10/12 h-auto flex flex-col gap-[80px] pt-[100px] pl-[30px] p-5 text-2xl font-bold"
+      >
+        <li
+          class="w-full flex justify-end pr-5 absolute right-8 top-10 text-2xl hover:text-[#f77f00] duration-300"
+        >
           <i class="fa-solid fa-xmark" id="menu-nav"></i>
         </li>
-        <li class="hover:text-[#f77f00] duration-300"><a href="../../index.html">Home</a></li>
-        <li class="hover:text-[#f77f00] duration-300"><a href="../Projects/index.html">Projects</a></li>
-        <li class="hover:text-[#f77f00] duration-300"><a href="">Contacts</a></li>
+        <li class="hover:text-[#f77f00] duration-300">
+          <a href="../../index.html">Home</a>
+        </li>
+        <li class="hover:text-[#f77f00] duration-300">
+          <a href="../Projects/index.html">Projects</a>
+        </li>
+        <li class="hover:text-[#f77f00] duration-300">
+          <a href="">Contacts</a>
+        </li>
       </ul>
-     </nav>
+    </nav>
     <!-- Main content -->
 
     <main>
@@ -143,6 +155,65 @@
         </div>
       </div>
     </main>
+    <hr />
+    <!-- Footer -->
+    <footer class="w-screen h-auto p-8">
+      <div id="footer-con" class="flex flex-col justify-center items-center">
+        <div id="tag">
+          <h1>Ayush Acharya &copy; 2025</h1>
+        </div>
+        <div id="logo" class="h-max w-max">
+          <!-- Logo -->
+          <svg
+            class="h-[180px]"
+            xmlns="http://www.w3.org/2000/svg"
+            width="150"
+            height="368"
+            viewBox="0 0 406 368"
+            fill="none"
+          >
+            <path
+              d="M314.899 203.5L314.899 349.43L162.5 209.053M314.899 203.5L283.037 203.586M314.899 203.5L337.881 203.586L381 171.109L314.899 171.109M162.5 209.053L118.044 170.96L157.5 171.109M162.5 209.053L65.5 301.465L20.5595 301.465L137.482 189.156M200.5 171.109L283.037 96.5L283.037 171.109M200.5 171.109L283.037 171.109M200.5 171.109L157.5 171.109M283.037 203.586L210.846 203.123L283.037 271.086L283.037 203.586ZM283.037 171.109L314.899 171.109M157.5 171.109L316.135 20.4322L314.899 171.109"
+              stroke="#1F2667"
+              stroke-opacity="0.9"
+              stroke-width="10"
+            />
+            <path
+              d="M314.899 203.5L314.899 349.43L162.5 209.053M314.899 203.5L283.037 203.586M314.899 203.5L337.881 203.586L381 171.109L314.899 171.109M162.5 209.053L118.044 170.96L157.5 171.109M162.5 209.053L65.5 301.465L20.5595 301.465L137.482 189.156M200.5 171.109L283.037 96.5L283.037 171.109M200.5 171.109L283.037 171.109M200.5 171.109L157.5 171.109M283.037 203.586L210.846 203.123L283.037 271.086L283.037 203.586ZM283.037 171.109L314.899 171.109M157.5 171.109L316.135 20.4322L314.899 171.109"
+              stroke="#f77f00"
+              stroke-width="10"
+            />
+          </svg>
+        </div>
+        <div id="media-link" class="">
+          <ul class="flex text-2xl gap-10">
+            <li>
+              <a href="https://www.linkedin.com/in/ayush-acharya-65943132b/"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://x.com/ig_ayushacharya"
+                ><i class="fa-brands fa-square-x-twitter"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/ig__ayushachar/"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+            </li>
+            <li>
+              <a href=""><i class="fa-solid fa-envelope"></i></a>
+            </li>
+            <li>
+              <a href="https://github.com/ig-ayush"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
   </body>
   <script src="../Education/education.js"></script>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
