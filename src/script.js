@@ -91,3 +91,9 @@ Projects.addEventListener(
   "click",
   () => (window.location.href = "./src/Projects/index.html")
 );
+// Connect Page Link
+const Connect = document.getElementById("connect");
+Connect.addEventListener(
+  "click",
+  () => (window.location.href = "./src/Connect/index.html")
+);

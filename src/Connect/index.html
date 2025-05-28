@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ig-ayush | Connect</title>
+    <link rel="icon" type="image/svg+xml" href="../../Assets/title.svg" />
+    <link rel="stylesheet" href="../output.css" />
+    <link rel="stylesheet" href="../Connect/connect.css" />
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="bg-[#111] text-white overflow-x-hidden">
+    <!-- NavBar -->
+    <nav class="w-screen h-[50px] p-8 flex justify-around">
+      <h1 class="lg:text-3xl text-2xl cursor-pointer w-max" id="logo">
+        <span class="text-[#f77f00]" id="ig-ayush">ig</span>-ayush
+      </h1>
+      <div id="menu-bar" class="lg:text-3xl text-2xl cursor-pointer">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </nav>
+    <!-- Nav Contetn -->
+    <nav
+      class="w-screen h-screen absolute top-0 justify-end backdrop-blur-sm z-20 hidden"
+      id="menu-nav"
+    >
+      <ul
+        id="menu"
+        class="relative bg-[#212529] lg:w-1/5 w-10/12 h-auto flex flex-col gap-[80px] pt-[100px] pl-[30px] p-5 text-2xl font-bold"
+      >
+        <li
+          class="w-full flex justify-end pr-5 absolute right-8 top-10 text-2xl hover:text-[#f77f00] duration-300"
+        >
+          <i class="fa-solid fa-xmark" id="menu-nav"></i>
+        </li>
+        <li class="hover:text-[#f77f00] duration-300">
+          <a href="../../index.html">Home</a>
+        </li>
+        <li class="hover:text-[#f77f00] duration-300">
+          <a href="../Projects/index.html">Projects</a>
+        </li>
+        <li class="hover:text-[#f77f00] duration-300">
+          <a href="../Education/index.html">Education</a>
+        </li>
+      </ul>
+    </nav>
+
+    
+  </body>
+  <script src="../Connect/connect.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</html>
