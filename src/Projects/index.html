@@ -14,14 +14,11 @@
       referrerpolicy="no-referrer"
     />
     <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
-    <link rel="stylesheet" href="projects.css">
-
+    <link rel="stylesheet" href="projects.css" />
   </head>
   <body class="bg-[#111] text-white min-h-screen overflow-x-hidden">
-       <!-- NavBar -->
-    <nav
-      class="w-screen h-[50px]  p-8 flex justify-around"
-    >
+    <!-- NavBar -->
+    <nav class="w-screen h-[50px] p-8 flex justify-around">
       <h1 class="lg:text-3xl text-2xl cursor-pointer w-max" id="logo">
         <span class="text-[#f77f00]" id="ig-ayush">ig</span>-ayush
       </h1>
@@ -30,22 +27,36 @@
       </div>
     </nav>
     <!-- Nav Contetn -->
-     <nav class=" w-screen h-screen absolute top-0  justify-end backdrop-blur-sm z-20 hidden" id="menu-nav">
-      <ul id="menu" class="relative bg-[#212529] lg:w-1/5 w-10/12  h-auto flex flex-col gap-[80px] pt-[100px] pl-[30px] p-5 text-2xl font-bold ">
-        <li class="w-full flex justify-end pr-5 absolute right-8 top-10 text-2xl hover:text-[#f77f00] duration-300">
+    <nav
+      class="w-screen h-screen absolute top-0 justify-end backdrop-blur-sm z-20 hidden"
+      id="menu-nav"
+    >
+      <ul
+        id="menu"
+        class="relative bg-[#212529] lg:w-1/5 w-10/12 h-auto flex flex-col gap-[80px] pt-[100px] pl-[30px] p-5 text-2xl font-bold"
+      >
+        <li
+          class="w-full flex justify-end pr-5 absolute right-8 top-10 text-2xl hover:text-[#f77f00] duration-300"
+        >
           <i class="fa-solid fa-xmark" id="menu-nav"></i>
         </li>
-        <li class="hover:text-[#f77f00] duration-300"><a href="../../index.html">Home</a></li>
-        <li class="hover:text-[#f77f00] duration-300"><a href="../Projects/index.html">Projects</a></li>
-        <li class="hover:text-[#f77f00] duration-300"><a href="">Contacts</a></li>
+        <li class="hover:text-[#f77f00] duration-300">
+          <a href="../../index.html">Home</a>
+        </li>
+        <li class="hover:text-[#f77f00] duration-300">
+          <a href="../Education/index.html">Education</a>
+        </li>
+        <li class="hover:text-[#f77f00] duration-300">
+          <a href="">Contacts</a>
+        </li>
       </ul>
-     </nav>
+    </nav>
 
     <!-- Main Content -->
     <main>
       <div id="heading" class="mt-6 sm:mt-10 flex justify-center">
         <h1
-          class="w-max border-2 sm:border-3 text-xl sm:text-2xl lg:text-3xl p-3 sm:p-5 rounded-2xl font-bold border-[#f77f00]"
+          class="w-max border-2 sm:border-3 text-lg sm:text-2xl lg:text-3xl p-2 sm:p-5 rounded-2xl font-bold border-[#f77f00]"
         >
           My Projects
         </h1>
@@ -60,7 +71,7 @@
           class="w-[2px] h-[280vh] -z-10 bg-[#f77f00] relative"
         ></div>
       </div>
-      <div id="projects" class="w-full h-auto flex flex-col lg:gap-8 gap-15 ">
+      <div id="projects" class="w-full h-auto flex flex-col lg:gap-8 gap-15">
         <!-- Project 1 -->
         <div id="project-1" class="w-full relative flex flex-col lg:flex-row">
           <div id="project-View" class="w-full lg:w-1/2 project-view">
@@ -75,7 +86,7 @@
               <div
                 id="p1-o"
                 class="w-6 h-6 bg-[#f77f00] rounded-full absolute -right-3 cursor-pointer z-20 hover:bg-white transition-all duration-300 hidden lg:block"
-                onclick="window.open('https://track-mate-eight.vercel.app/')"
+                onclick="window.open('https://ig-ayush.github.io/Trendfeet-marketplace/')"
               ></div>
               <img
                 src="../../Assets/Images/Projects/TrendFeet.png"
@@ -88,7 +99,9 @@
                 <li
                   class="border p-3 sm:p-4 text-lg sm:text-xl rounded-lg font-semibold border-[#f5a248] hover:bg-[#f77f00] transition-all duration-500 group"
                 >
-                  <a href="https://github.com/ig-ayush/Trendfeet-marketplace" target="_blank"
+                  <a
+                    href="https://github.com/ig-ayush/Trendfeet-marketplace"
+                    target="_blank"
                     >Github
                     <span class="group-hover:underline group-hover:text-black"
                       >Link</span
@@ -98,7 +111,9 @@
                 <li
                   class="border p-3 sm:p-4 text-lg sm:text-xl rounded-lg font-semibold border-[#f77f00] hover:bg-[#f77f00] transition-all duration-500 group"
                 >
-                  <a href="https://ig-ayush.github.io/Trendfeet-marketplace/" target="_blank"
+                  <a
+                    href="https://ig-ayush.github.io/Trendfeet-marketplace/"
+                    target="_blank"
                     >Live
                     <span class="group-hover:underline group-hover:text-black"
                       >Demo</span
@@ -116,7 +131,8 @@
             data-aos-offset="100"
           >
             <h1 class="text-xl sm:text-3xl lg:text-4xl font-semibold">
-              <span class="text-[#f77f00] font-bold text-2xl sm:text-4xl lg:text-5xl"
+              <span
+                class="text-[#f77f00] font-bold text-2xl sm:text-4xl lg:text-5xl"
                 >TrendFeet</span
               >
               – Footwear Marketplace
@@ -171,7 +187,10 @@
         </div>
 
         <!-- Project 2 -->
-        <div id="project-2" class="w-full relative flex flex-col-reverse lg:flex-row">
+        <div
+          id="project-2"
+          class="w-full relative flex flex-col-reverse lg:flex-row"
+        >
           <div
             id="p2-info"
             class="w-full lg:w-1/2 p-4 sm:p-6 lg:p-20 flex flex-col gap-6 sm:gap-8"
@@ -180,7 +199,8 @@
             data-aos-offset="100"
           >
             <h1 class="text-xl sm:text-3xl lg:text-4xl font-semibold">
-              <span class="text-[#f77f00] font-bold text-2xl sm:text-4xl lg:text-5xl"
+              <span
+                class="text-[#f77f00] font-bold text-2xl sm:text-4xl lg:text-5xl"
                 >Recipe Book</span
               >
               – Recipe Management Web App
@@ -194,28 +214,44 @@
               development and UI/UX design.
             </p>
             <ul class="flex gap-4 sm:gap-8 flex-wrap">
-              <li class="p-2 sm:p-3 lg:p-4 border-2 sm:border-3 w-max rounded-2xl text-base sm:text-lg lg:text-xl">
+              <li
+                class="p-2 sm:p-3 lg:p-4 border-2 sm:border-3 w-max rounded-2xl text-base sm:text-lg lg:text-xl"
+              >
                 #React.js
               </li>
-              <li class="p-2 sm:p-3 lg:p-4 border-2 sm:border-3 w-max rounded-2xl text-base sm:text-lg lg:text-xl">
+              <li
+                class="p-2 sm:p-3 lg:p-4 border-2 sm:border-3 w-max rounded-2xl text-base sm:text-lg lg:text-xl"
+              >
                 #CSS
               </li>
-              <li class="p-2 sm:p-3 lg:p-4 border-2 sm:border-3 w-max rounded-2xl text-base sm:text-lg lg:text-xl">
+              <li
+                class="p-2 sm:p-3 lg:p-4 border-2 sm:border-3 w-max rounded-2xl text-base sm:text-lg lg:text-xl"
+              >
                 #JavaScript
               </li>
-              <li class="p-2 sm:p-3 lg:p-4 border-2 sm:border-3 w-max rounded-2xl text-base sm:text-lg lg:text-xl">
+              <li
+                class="p-2 sm:p-3 lg:p-4 border-2 sm:border-3 w-max rounded-2xl text-base sm:text-lg lg:text-xl"
+              >
                 #Material-UI
               </li>
-              <li class="p-2 sm:p-3 lg:p-4 border-2 sm:border-3 w-max rounded-2xl text-base sm:text-lg lg:text-xl">
+              <li
+                class="p-2 sm:p-3 lg:p-4 border-2 sm:border-3 w-max rounded-2xl text-base sm:text-lg lg:text-xl"
+              >
                 #VS Code
               </li>
-              <li class="p-2 sm:p-3 lg:p-4 border-2 sm:border-3 w-max rounded-2xl text-base sm:text-lg lg:text-xl">
+              <li
+                class="p-2 sm:p-3 lg:p-4 border-2 sm:border-3 w-max rounded-2xl text-base sm:text-lg lg:text-xl"
+              >
                 #Vercel
               </li>
-              <li class="p-2 sm:p-3 lg:p-4 border-2 sm:border-3 w-max rounded-2xl text-base sm:text-lg lg:text-xl">
+              <li
+                class="p-2 sm:p-3 lg:p-4 border-2 sm:border-3 w-max rounded-2xl text-base sm:text-lg lg:text-xl"
+              >
                 #GitHub
               </li>
-              <li class="p-2 sm:p-3 lg:p-4 border-2 sm:border-3 w-max rounded-2xl text-base sm:text-lg lg:text-xl">
+              <li
+                class="p-2 sm:p-3 lg:p-4 border-2 sm:border-3 w-max rounded-2xl text-base sm:text-lg lg:text-xl"
+              >
                 #REST API
               </li>
             </ul>
@@ -245,7 +281,9 @@
                 <li
                   class="border p-3 sm:p-4 text-lg sm:text-xl rounded-lg font-semibold border-[#f5a248] hover:bg-[#f77f00] transition-all duration-500 group"
                 >
-                  <a href="https://github.com/ig-ayush/Recipe-Book" target="_blank"
+                  <a
+                    href="https://github.com/ig-ayush/Recipe-Book"
+                    target="_blank"
                     >Github
                     <span class="group-hover:underline group-hover:text-black"
                       >Link</span
@@ -255,7 +293,9 @@
                 <li
                   class="border p-3 sm:p-4 text-lg sm:text-xl rounded-lg font-semibold border-[#f77f00] hover:bg-[#f77f00] transition-all duration-500 group"
                 >
-                  <a href="https://recipe-book-two-puce.vercel.app/" target="_blank"
+                  <a
+                    href="https://recipe-book-two-puce.vercel.app/"
+                    target="_blank"
                     >Live
                     <span class="group-hover:underline group-hover:text-black"
                       >Demo</span
@@ -294,7 +334,9 @@
                 <li
                   class="border p-3 sm:p-4 text-lg sm:text-xl rounded-lg font-semibold border-[#f5a248] hover:bg-[#f77f00] transition-all duration-500 group"
                 >
-                  <a href="https://github.com/ig-ayush/E-commerce" target="_blank"
+                  <a
+                    href="https://github.com/ig-ayush/E-commerce"
+                    target="_blank"
                     >Github
                     <span class="group-hover:underline group-hover:text-black"
                       >Link</span
@@ -304,7 +346,9 @@
                 <li
                   class="border p-3 sm:p-4 text-lg sm:text-xl rounded-lg font-semibold border-[#f77f00] hover:bg-[#f77f00] transition-all duration-500 group"
                 >
-                  <a href="https://e-commerce-xi-kohl.vercel.app/" target="_blank"
+                  <a
+                    href="https://e-commerce-xi-kohl.vercel.app/"
+                    target="_blank"
                     >Live
                     <span class="group-hover:underline group-hover:text-black"
                       >Demo</span
@@ -322,7 +366,10 @@
             data-aos-offset="100"
           >
             <h1 class="text-xl sm:text-3xl lg:text-4xl font-semibold">
-              <span class="text-[#f77f00] font-bold text-2xl sm:text-4xl lg:text-5xl">E-Commerce</span>
+              <span
+                class="text-[#f77f00] font-bold text-2xl sm:text-4xl lg:text-5xl"
+                >E-Commerce</span
+              >
               – Modern UI for Online Stores
             </h1>
             <p class="text-base sm:text-lg lg:text-xl [word-spacing:0.15rem]">
@@ -334,25 +381,39 @@
               techniques.
             </p>
             <ul class="flex gap-4 sm:gap-8 flex-wrap">
-              <li class="p-2 sm:p-3 lg:p-4 border-2 sm:border-3 w-max rounded-2xl text-base sm:text-lg lg:text-xl">
+              <li
+                class="p-2 sm:p-3 lg:p-4 border-2 sm:border-3 w-max rounded-2xl text-base sm:text-lg lg:text-xl"
+              >
                 #Tailwind CSS
               </li>
-              <li class="p-2 sm:p-3 lg:p-4 border-2 sm:border-3 w-max rounded-2xl text-base sm:text-lg lg:text-xl">
+              <li
+                class="p-2 sm:p-3 lg:p-4 border-2 sm:border-3 w-max rounded-2xl text-base sm:text-lg lg:text-xl"
+              >
                 #HTML
               </li>
-              <li class="p-2 sm:p-3 lg:p-4 border-2 sm:border-3 w-max rounded-2xl text-base sm:text-lg lg:text-xl">
+              <li
+                class="p-2 sm:p-3 lg:p-4 border-2 sm:border-3 w-max rounded-2xl text-base sm:text-lg lg:text-xl"
+              >
                 #JavaScript
               </li>
-              <li class="p-2 sm:p-3 lg:p-4 border-2 sm:border-3 w-max rounded-2xl text-base sm:text-lg lg:text-xl">
+              <li
+                class="p-2 sm:p-3 lg:p-4 border-2 sm:border-3 w-max rounded-2xl text-base sm:text-lg lg:text-xl"
+              >
                 #VS Code
               </li>
-              <li class="p-2 sm:p-3 lg:p-4 border-2 sm:border-3 w-max rounded-2xl text-base sm:text-lg lg:text-xl">
+              <li
+                class="p-2 sm:p-3 lg:p-4 border-2 sm:border-3 w-max rounded-2xl text-base sm:text-lg lg:text-xl"
+              >
                 #Vercel
               </li>
-              <li class="p-2 sm:p-3 lg:p-4 border-2 sm:border-3 w-max rounded-2xl text-base sm:text-lg lg:text-xl">
+              <li
+                class="p-2 sm:p-3 lg:p-4 border-2 sm:border-3 w-max rounded-2xl text-base sm:text-lg lg:text-xl"
+              >
                 #Git
               </li>
-              <li class="p-2 sm:p-3 lg:p-4 border-2 sm:border-3 w-max rounded-2xl text-base sm:text-lg lg:text-xl">
+              <li
+                class="p-2 sm:p-3 lg:p-4 border-2 sm:border-3 w-max rounded-2xl text-base sm:text-lg lg:text-xl"
+              >
                 #GitHub
               </li>
             </ul>
@@ -360,7 +421,10 @@
         </div>
 
         <!-- Project 4 -->
-        <div id="project-4" class="w-full relative flex flex-col-reverse lg:flex-row">
+        <div
+          id="project-4"
+          class="w-full relative flex flex-col-reverse lg:flex-row"
+        >
           <div
             id="p4-info"
             class="w-full lg:w-1/2 p-4 sm:p-6 lg:p-20 flex flex-col gap-6 sm:gap-8"
@@ -369,7 +433,10 @@
             data-aos-offset="100"
           >
             <h1 class="text-xl sm:text-3xl lg:text-4xl font-semibold">
-              <span class="text-[#f77f00] font-bold text-2xl sm:text-4xl lg:text-5xl">TrackMate</span>
+              <span
+                class="text-[#f77f00] font-bold text-2xl sm:text-4xl lg:text-5xl"
+                >TrackMate</span
+              >
               – Balance & Expense Tracker
             </h1>
             <p class="text-base sm:text-lg lg:text-xl [word-spacing:0.15rem]">
@@ -382,22 +449,34 @@
               for smartphones.
             </p>
             <ul class="flex gap-4 sm:gap-8 flex-wrap">
-              <li class="p-2 sm:p-3 lg:p-4 border-2 sm:border-3 w-max rounded-2xl text-base sm:text-lg lg:text-xl">
+              <li
+                class="p-2 sm:p-3 lg:p-4 border-2 sm:border-3 w-max rounded-2xl text-base sm:text-lg lg:text-xl"
+              >
                 #HTML
               </li>
-              <li class="p-2 sm:p-3 lg:p-4 border-2 sm:border-3 w-max rounded-2xl text-base sm:text-lg lg:text-xl">
+              <li
+                class="p-2 sm:p-3 lg:p-4 border-2 sm:border-3 w-max rounded-2xl text-base sm:text-lg lg:text-xl"
+              >
                 #JavaScript
               </li>
-              <li class="p-2 sm:p-3 lg:p-4 border-2 sm:border-3 w-max rounded-2xl text-base sm:text-lg lg:text-xl">
+              <li
+                class="p-2 sm:p-3 lg:p-4 border-2 sm:border-3 w-max rounded-2xl text-base sm:text-lg lg:text-xl"
+              >
                 #Tailwind CSS
               </li>
-              <li class="p-2 sm:p-3 lg:p-4 border-2 sm:border-3 w-max rounded-2xl text-base sm:text-lg lg:text-xl">
+              <li
+                class="p-2 sm:p-3 lg:p-4 border-2 sm:border-3 w-max rounded-2xl text-base sm:text-lg lg:text-xl"
+              >
                 #Vercel
               </li>
-              <li class="p-2 sm:p-3 lg:p-4 border-2 sm:border-3 w-max rounded-2xl text-base sm:text-lg lg:text-xl">
+              <li
+                class="p-2 sm:p-3 lg:p-4 border-2 sm:border-3 w-max rounded-2xl text-base sm:text-lg lg:text-xl"
+              >
                 #VS Code
               </li>
-              <li class="p-2 sm:p-3 lg:p-4 border-2 sm:border-3 w-max rounded-2xl text-base sm:text-lg lg:text-xl">
+              <li
+                class="p-2 sm:p-3 lg:p-4 border-2 sm:border-3 w-max rounded-2xl text-base sm:text-lg lg:text-xl"
+              >
                 #GitHub
               </li>
             </ul>
@@ -427,7 +506,9 @@
                 <li
                   class="border p-3 sm:p-4 text-lg sm:text-xl rounded-lg font-semibold border-[#f5a248] hover:bg-[#f77f00] transition-all duration-500 group"
                 >
-                  <a href="https://github.com/ig-ayush/Expense-tracker" target="_blank"
+                  <a
+                    href="https://github.com/ig-ayush/Expense-tracker"
+                    target="_blank"
                     >Github
                     <span class="group-hover:underline group-hover:text-black"
                       >Link</span
@@ -463,9 +544,14 @@
         id="experience-sec"
         class="p-4 sm:p-6 lg:p-10 w-full flex flex-col justify-center items-center mt-6 sm:mt-10"
       >
-        <h1 class="text-xl sm:text-3xl lg:text-4xl font-bold mb-5">Experience</h1>
+        <h1 class="text-xl sm:text-3xl lg:text-4xl font-bold mb-5">
+          Experience
+        </h1>
         <div id="experience-con" class="w-full sm:w-3/4 lg:w-1/3 h-auto">
-          <div id="codLab" class="w-full h-max flex flex-col p-4 sm:p-5 bg-[#201d1d]">
+          <div
+            id="codLab"
+            class="w-full h-max flex flex-col p-4 sm:p-5 bg-[#201d1d]"
+          >
             <div
               id="intro"
               class="h-auto w-full p-4 sm:p-8 flex flex-col sm:flex-row justify-between items-center gap-4"
@@ -476,7 +562,9 @@
                 class="bg-white h-auto max-w-[150px] sm:max-w-[200px] rounded-2xl"
               />
               <div id="details" class="text-center sm:text-right">
-                <h1 class="text-xl sm:text-2xl lg:text-3xl font-bold p-3">CodeLab Systems</h1>
+                <h1 class="text-xl sm:text-2xl lg:text-3xl font-bold p-3">
+                  CodeLab Systems
+                </h1>
                 <p
                   class="bg-[#111] w-max pl-4 pr-4 p-2 rounded-lg text-center font-semibold text-sm sm:text-base"
                 >
@@ -488,23 +576,49 @@
               <p class="text-base sm:text-lg lg:text-xl text-[#9ca3af]">
                 Worked on developing and enhancing responsive web applications
                 using React.js. Built reusable components and implemented
-                dynamic UI features to improve user experience. Collaborated with
-                the development team on frontend tasks and followed best
+                dynamic UI features to improve user experience. Collaborated
+                with the development team on frontend tasks and followed best
                 practices in component-based architecture.
               </p>
             </div>
             <div id="techs" class="p-4 sm:p-8">
               <ul class="flex gap-4 sm:gap-5 flex-wrap">
-                <li class="bg-[#111] w-max p-2 sm:p-2.5 rounded-lg text-sm sm:text-base">React</li>
-                <li class="bg-[#111] w-max p-2 sm:p-2.5 rounded-lg text-sm sm:text-base">Node JS</li>
-                <li class="bg-[#111] w-max p-2 sm:p-2.5 rounded-lg text-sm sm:text-base">JavaScript</li>
-                <li class="bg-[#111] w-max p-2 sm:p-2.5 rounded-lg text-sm sm:text-base">Tailwind CSS</li>
-                <li class="bg-[#111] w-max p-2 sm:p-2.5 rounded-lg text-sm sm:text-base">Github</li>
-                <li class="bg-[#111] w-max p-2 sm:p-2.5 rounded-lg text-sm sm:text-base">Vercel</li>
+                <li
+                  class="bg-[#111] w-max p-2 sm:p-2.5 rounded-lg text-sm sm:text-base"
+                >
+                  React
+                </li>
+                <li
+                  class="bg-[#111] w-max p-2 sm:p-2.5 rounded-lg text-sm sm:text-base"
+                >
+                  Node JS
+                </li>
+                <li
+                  class="bg-[#111] w-max p-2 sm:p-2.5 rounded-lg text-sm sm:text-base"
+                >
+                  JavaScript
+                </li>
+                <li
+                  class="bg-[#111] w-max p-2 sm:p-2.5 rounded-lg text-sm sm:text-base"
+                >
+                  Tailwind CSS
+                </li>
+                <li
+                  class="bg-[#111] w-max p-2 sm:p-2.5 rounded-lg text-sm sm:text-base"
+                >
+                  Github
+                </li>
+                <li
+                  class="bg-[#111] w-max p-2 sm:p-2.5 rounded-lg text-sm sm:text-base"
+                >
+                  Vercel
+                </li>
               </ul>
             </div>
             <div id="visit" class="p-4 sm:p-8 flex justify-end">
-              <a href="" class="text-lg sm:text-xl lg:text-2xl pr-5 font-bold group"
+              <a
+                href=""
+                class="text-lg sm:text-xl lg:text-2xl pr-5 font-bold group"
                 >Visit
                 <i
                   class="fa-solid fa-arrow-right text-sm sm:text-lg group-hover:translate-x-2 transition-transform duration-300"
@@ -514,9 +628,63 @@
           </div>
         </div>
       </div>
-
-      <footer class="w-screen">
-        
+      <hr />
+      <footer class="w-screen h-auto p-8">
+        <div id="footer-con" class="flex flex-col justify-center items-center">
+          <div id="tag">
+            <h1>Ayush Acharya &copy; 2025</h1>
+          </div>
+          <div id="logo" class="h-max w-max">
+            <!-- Logo -->
+            <svg
+              class="h-[180px]"
+              xmlns="http://www.w3.org/2000/svg"
+              width="150"
+              height="368"
+              viewBox="0 0 406 368"
+              fill="none"
+            >
+              <path
+                d="M314.899 203.5L314.899 349.43L162.5 209.053M314.899 203.5L283.037 203.586M314.899 203.5L337.881 203.586L381 171.109L314.899 171.109M162.5 209.053L118.044 170.96L157.5 171.109M162.5 209.053L65.5 301.465L20.5595 301.465L137.482 189.156M200.5 171.109L283.037 96.5L283.037 171.109M200.5 171.109L283.037 171.109M200.5 171.109L157.5 171.109M283.037 203.586L210.846 203.123L283.037 271.086L283.037 203.586ZM283.037 171.109L314.899 171.109M157.5 171.109L316.135 20.4322L314.899 171.109"
+                stroke="#1F2667"
+                stroke-opacity="0.9"
+                stroke-width="10"
+              />
+              <path
+                d="M314.899 203.5L314.899 349.43L162.5 209.053M314.899 203.5L283.037 203.586M314.899 203.5L337.881 203.586L381 171.109L314.899 171.109M162.5 209.053L118.044 170.96L157.5 171.109M162.5 209.053L65.5 301.465L20.5595 301.465L137.482 189.156M200.5 171.109L283.037 96.5L283.037 171.109M200.5 171.109L283.037 171.109M200.5 171.109L157.5 171.109M283.037 203.586L210.846 203.123L283.037 271.086L283.037 203.586ZM283.037 171.109L314.899 171.109M157.5 171.109L316.135 20.4322L314.899 171.109"
+                stroke="#f77f00"
+                stroke-width="10"
+              />
+            </svg>
+          </div>
+          <div id="media-link" class="">
+            <ul class="flex text-2xl gap-10">
+              <li>
+                <a href="https://www.linkedin.com/in/ayush-acharya-65943132b/"
+                  ><i class="fa-brands fa-linkedin"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://x.com/ig_ayushacharya"
+                  ><i class="fa-brands fa-square-x-twitter"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/ig__ayushachar/"
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
+              </li>
+              <li>
+                <a href=""><i class="fa-solid fa-envelope"></i></a>
+              </li>
+              <li>
+                <a href="https://github.com/ig-ayush"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </footer>
     </main>
     <script src="project.js"></script>
