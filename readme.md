@@ -41,35 +41,37 @@ It currently features the following:
 
 ## 📁 Folder Structure
 
+```
 IGAYUSH-PORTFOLIO
-│ .gitignore
-│ index.html // Main page
-│ package-lock.json
-│ package.json
-│ readme.md
-│ tailwind.config.js
+│   .gitignore
+│   index.html
+│   package-lock.json
+│   package.json
+│   readme.md
+│   tailwind.config.js
 │
 ├───.vscode
 ├───Assets
 ├───node_modules
 ├───src
-│ │ input.css
-│ │ matter.js
-│ │ output.css
-│ │ script.js
-│ │ styles.css
-│ │
-│ ├───Connect
-│ │ connect.css
-│ │ connect.js
-│ │ index.html
-│ │
-│ ├───Education
-│ │ education.css
-│ │ education.js
-│ │ index.html
-│ │
-│ └───Projects
-│ index.html
-│ project.js
-│ projects.css
+│   │   input.css
+│   │   matter.js
+│   │   output.css
+│   │   script.js
+│   │   styles.css
+│   │
+│   ├───Connect
+│   │       connect.css
+│   │       connect.js
+│   │       index.html
+│   │
+│   ├───Education
+│   │       education.css
+│   │       education.js
+│   │       index.html
+│   │
+│   └───Projects
+│           index.html
+│           project.js
+│           projects.css
+```
