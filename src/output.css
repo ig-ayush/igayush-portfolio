@@ -327,9 +327,12 @@
   .h-6 {
     height: calc(var(--spacing) * 6);
   }
+<<<<<<< HEAD
   .h-10 {
     height: calc(var(--spacing) * 10);
   }
+=======
+>>>>>>> 9d6233553b95cd9e8b9fb3f57441a47115a0fe65
   .h-\[2px\] {
     height: 2px;
   }
@@ -387,9 +390,6 @@
   .w-3 {
     width: calc(var(--spacing) * 3);
   }
-  .w-5 {
-    width: calc(var(--spacing) * 5);
-  }
   .w-6 {
     width: calc(var(--spacing) * 6);
   }
@@ -398,9 +398,6 @@
   }
   .w-10\/12 {
     width: calc(10/12 * 100%);
-  }
-  .w-15 {
-    width: calc(var(--spacing) * 15);
   }
   .w-\[2px\] {
     width: 2px;
@@ -516,9 +513,6 @@
   .overflow-y-auto {
     overflow-y: auto;
   }
-  .rounded {
-    border-radius: 0.25rem;
-  }
   .rounded-2xl {
     border-radius: var(--radius-2xl);
   }
@@ -534,34 +528,8 @@
   .rounded-xl {
     border-radius: var(--radius-xl);
   }
-  .rounded-t {
-    border-top-left-radius: 0.25rem;
-    border-top-right-radius: 0.25rem;
-  }
-  .rounded-tl-2xl {
-    border-top-left-radius: var(--radius-2xl);
-  }
-  .rounded-tl-3xl {
-    border-top-left-radius: var(--radius-3xl);
-  }
   .rounded-tl-4xl {
     border-top-left-radius: var(--radius-4xl);
-  }
-  .rounded-tl-lg {
-    border-top-left-radius: var(--radius-lg);
-  }
-  .rounded-tr-4xl {
-    border-top-right-radius: var(--radius-4xl);
-  }
-  .rounded-b {
-    border-bottom-right-radius: 0.25rem;
-    border-bottom-left-radius: 0.25rem;
-  }
-  .rounded-br-4xl {
-    border-bottom-right-radius: var(--radius-4xl);
-  }
-  .rounded-bl {
-    border-bottom-left-radius: 0.25rem;
   }
   .rounded-bl-4xl {
     border-bottom-left-radius: var(--radius-4xl);
@@ -642,9 +610,6 @@
   .p-10 {
     padding: calc(var(--spacing) * 10);
   }
-  .p-15 {
-    padding: calc(var(--spacing) * 15);
-  }
   .px-2 {
     padding-inline: calc(var(--spacing) * 2);
   }
@@ -698,10 +663,6 @@
   .text-4xl {
     font-size: var(--text-4xl);
     line-height: var(--tw-leading, var(--text-4xl--line-height));
-  }
-  .text-5xl {
-    font-size: var(--text-5xl);
-    line-height: var(--tw-leading, var(--text-5xl--line-height));
   }
   .text-8xl {
     font-size: var(--text-8xl);
