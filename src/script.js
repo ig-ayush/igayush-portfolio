@@ -97,3 +97,10 @@ Connect.addEventListener(
   "click",
   () => (window.location.href = "./src/Connect/index.html")
 );
+
+// Resume downlode button
+const resumeDownlodeBtn = document.getElementById("downlode-resume-btn");
+
+resumeDownlodeBtn.addEventListener("click",()=>{
+  console.log("You got the Ayush resume.")
+})
