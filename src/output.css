@@ -243,8 +243,26 @@
   .right-0 {
     right: calc(var(--spacing) * 0);
   }
+  .right-3 {
+    right: calc(var(--spacing) * 3);
+  }
+  .right-5 {
+    right: calc(var(--spacing) * 5);
+  }
   .right-8 {
     right: calc(var(--spacing) * 8);
+  }
+  .right-\[-100px\] {
+    right: -100px;
+  }
+  .right-\[-150px\] {
+    right: -150px;
+  }
+  .right-\[-180px\] {
+    right: -180px;
+  }
+  .right-\[-200px\] {
+    right: -200px;
   }
   .right-\[20px\] {
     right: 20px;
@@ -255,6 +273,9 @@
   .right-\[80px\] {
     right: 80px;
   }
+  .right-\[100px\] {
+    right: 100px;
+  }
   .bottom-\[-200px\] {
     bottom: -200px;
   }
@@ -264,11 +285,44 @@
   .left-0 {
     left: calc(var(--spacing) * 0);
   }
+  .left-5 {
+    left: calc(var(--spacing) * 5);
+  }
+  .left-10 {
+    left: calc(var(--spacing) * 10);
+  }
   .left-\[-45px\] {
     left: -45px;
   }
+  .left-\[0px\] {
+    left: 0px;
+  }
+  .left-\[10px\] {
+    left: 10px;
+  }
   .left-\[40px\] {
     left: 40px;
+  }
+  .left-\[50px\] {
+    left: 50px;
+  }
+  .left-\[80px\] {
+    left: 80px;
+  }
+  .left-\[100px\] {
+    left: 100px;
+  }
+  .left-\[120px\] {
+    left: 120px;
+  }
+  .left-\[150px\] {
+    left: 150px;
+  }
+  .left-\[180px\] {
+    left: 180px;
+  }
+  .left-\[200px\] {
+    left: 200px;
   }
   .-z-10 {
     z-index: calc(10 * -1);
@@ -318,6 +372,9 @@
   .hidden {
     display: none;
   }
+  .table {
+    display: table;
+  }
   .h-3 {
     height: calc(var(--spacing) * 3);
   }
@@ -335,9 +392,6 @@
   }
   .h-\[50px\] {
     height: 50px;
-  }
-  .h-\[60vh\] {
-    height: 60vh;
   }
   .h-\[65px\] {
     height: 65px;
@@ -372,6 +426,9 @@
   .min-h-screen {
     min-height: 100vh;
   }
+  .w-1 {
+    width: calc(var(--spacing) * 1);
+  }
   .w-1\/2 {
     width: calc(1/2 * 100%);
   }
@@ -380,6 +437,9 @@
   }
   .w-6 {
     width: calc(var(--spacing) * 6);
+  }
+  .w-10 {
+    width: calc(var(--spacing) * 10);
   }
   .w-10\/12 {
     width: calc(10/12 * 100%);
@@ -417,11 +477,17 @@
   .max-w-full {
     max-width: 100%;
   }
+  .border-collapse {
+    border-collapse: collapse;
+  }
   .transform {
     transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
   }
   .cursor-pointer {
     cursor: pointer;
+  }
+  .resize {
+    resize: both;
   }
   .flex-col {
     flex-direction: column;
@@ -686,8 +752,19 @@
   .text-white {
     color: var(--color-white);
   }
+  .underline {
+    text-decoration-line: underline;
+  }
+  .outline {
+    outline-style: var(--tw-outline-style);
+    outline-width: 1px;
+  }
   .backdrop-blur-sm {
     --tw-backdrop-blur: blur(var(--blur-sm));
+    -webkit-backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
+    backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
+  }
+  .backdrop-filter {
     -webkit-backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
     backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
   }
@@ -849,9 +926,19 @@
       border-color: #f77f00;
     }
   }
+  .sm\:top-1 {
+    @media (width >= 40rem) {
+      top: calc(var(--spacing) * 1);
+    }
+  }
   .sm\:top-5 {
     @media (width >= 40rem) {
       top: calc(var(--spacing) * 5);
+    }
+  }
+  .sm\:top-10 {
+    @media (width >= 40rem) {
+      top: calc(var(--spacing) * 10);
     }
   }
   .sm\:top-\[40px\] {
@@ -874,9 +961,24 @@
       top: 230px;
     }
   }
+  .sm\:right-\[-150px\] {
+    @media (width >= 40rem) {
+      right: -150px;
+    }
+  }
   .sm\:left-\[40px\] {
     @media (width >= 40rem) {
       left: 40px;
+    }
+  }
+  .sm\:left-\[150px\] {
+    @media (width >= 40rem) {
+      left: 150px;
+    }
+  }
+  .sm\:left-\[200px\] {
+    @media (width >= 40rem) {
+      left: 200px;
     }
   }
   .sm\:mt-10 {
@@ -1058,6 +1160,16 @@
       line-height: var(--tw-leading, var(--text-xl--line-height));
     }
   }
+  .md\:pointer-events-auto {
+    @media (width >= 48rem) {
+      pointer-events: auto;
+    }
+  }
+  .md\:pointer-events-none {
+    @media (width >= 48rem) {
+      pointer-events: none;
+    }
+  }
   .md\:top-\[80px\] {
     @media (width >= 48rem) {
       top: 80px;
@@ -1083,6 +1195,11 @@
       left: 80px;
     }
   }
+  .md\:left-\[150px\] {
+    @media (width >= 48rem) {
+      left: 150px;
+    }
+  }
   .md\:block {
     @media (width >= 48rem) {
       display: block;
@@ -1101,6 +1218,11 @@
   .md\:h-\[50px\] {
     @media (width >= 48rem) {
       height: 50px;
+    }
+  }
+  .md\:h-\[60vh\] {
+    @media (width >= 48rem) {
+      height: 60vh;
     }
   }
   .md\:w-\[140px\] {
@@ -1191,6 +1313,11 @@
   .lg\:top-\[250px\] {
     @media (width >= 64rem) {
       top: 250px;
+    }
+  }
+  .lg\:top-\[300px\] {
+    @media (width >= 64rem) {
+      top: 300px;
     }
   }
   .lg\:right-16 {
@@ -1416,6 +1543,11 @@ canvas {
   syntax: "*";
   inherits: false;
 }
+@property --tw-outline-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
 @property --tw-backdrop-blur {
   syntax: "*";
   inherits: false;
@@ -1494,6 +1626,7 @@ canvas {
       --tw-skew-y: initial;
       --tw-border-style: solid;
       --tw-font-weight: initial;
+      --tw-outline-style: solid;
       --tw-backdrop-blur: initial;
       --tw-backdrop-brightness: initial;
       --tw-backdrop-contrast: initial;
