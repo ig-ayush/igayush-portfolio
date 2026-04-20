@@ -5,12 +5,17 @@
 }
 
 h1,
-li,p {
+li,
+p {
   font-family: "Spartan", sans-serif;
 }
 
 #menu {
   animation: menu 0.5s ease-in-out;
+}
+
+#projects-section {
+  position: relative;
 }
 
 @keyframes menu {

@@ -52,26 +52,37 @@
       </ul>
     </nav>
 
-    <!-- Main Content -->
-    <main>
-      <div id="heading" class="mt-6 sm:mt-10 flex justify-center">
-        <h1
-          class="w-max border-2 sm:border-3 text-lg sm:text-2xl lg:text-3xl p-2 sm:p-5 rounded-2xl font-bold border-[#f77f00]"
-        >
-          My Projects
-        </h1>
-      </div>
-      <!-- Line -->
-      <div
-        id="line-con"
-        class="w-full max-h-screen lg:flex hidden justify-center absolute pointer-events-none"
-      >
-        <div
-          id="line"
-          class="w-[2px] h-[280vh] -z-10 bg-[#f77f00] relative"
-        ></div>
-      </div>
-      <div id="projects" class="w-full h-auto flex flex-col lg:gap-8 gap-15">
+      <!-- Main Content -->
+      <main>
+
+        <!-- PROJECTS SECTION WITH VERTICAL LINE -->
+        <div id="projects-container" class="relative">
+
+          <!-- "My Projects" Heading -->
+          <div id="heading" class="mt-6 sm:mt-10 flex justify-center">
+            <h1
+              class="w-max border-2 sm:border-3 text-lg sm:text-2xl lg:text-3xl p-2 sm:p-5 rounded-2xl font-bold border-[#f77f00]"
+            >
+              My Projects
+            </h1>
+          </div>
+
+          <!-- Vertical Orange Line - dynamically spans between the two headings -->
+          <div
+            id="line-con"
+            class="w-full lg:flex hidden justify-center absolute pointer-events-none"
+            style="top: 0; left: 0; right: 0; bottom: 0;"
+          >
+            <div
+              id="line"
+              class="w-[2px] -z-10 bg-[#f77f00] absolute"
+              style="top: 0; height: 0;"
+            ></div>
+          </div>
+
+          <!-- All Projects -->
+          <div id="projects" class="w-full h-auto flex flex-col lg:gap-8 gap-15">
+
         <!-- Project 1 -->
         <div id="project-1" class="w-full relative flex flex-col lg:flex-row">
           <div id="project-View" class="w-full lg:w-1/2 project-view">
@@ -424,7 +435,7 @@
         <div
           id="project-4"
           class="w-full relative flex flex-col-reverse lg:flex-row"
-        >
+          >
           <div
             id="p4-info"
             class="w-full lg:w-1/2 p-4 sm:p-6 lg:p-20 flex flex-col gap-6 sm:gap-8"
@@ -528,19 +539,22 @@
               </ul>
             </div>
           </div>
+
+
         </div>
 
-        <!-- Message -->
-        <div id="heading" class="mt-6 sm:mt-10 flex justify-center">
-          <h1
-            class="w-max border-2 sm:border-3 text-xl sm:text-2xl lg:text-3xl p-3 sm:p-5 rounded-2xl font-bold border-[#f77f00] z-20 bg-[#111]"
-          >
-            Adding more projects soon
-          </h1>
-        </div>
-      </div>
+          <!-- "Adding more projects soon" Heading -->
+          <div id="heading" class="mt-6 sm:mt-10 flex justify-center">
+            <h1
+              class="w-max border-2 sm:border-3 text-xl sm:text-2xl lg:text-3xl p-3 sm:p-5 rounded-2xl font-bold border-[#f77f00] z-20 bg-[#111]"
+            >
+              Adding more projects soon
+            </h1>
+          </div>
 
-      <div
+        </div>
+
+             <div
         id="experience-sec"
         class="p-4 sm:p-6 lg:p-10 w-full flex flex-col justify-center items-center mt-6 sm:mt-10"
       >
@@ -689,7 +703,9 @@
           </div>
         </div>
       </footer>
-    </main>
+      </main>
+
+
     <script src="project.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
